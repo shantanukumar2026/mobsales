@@ -13,7 +13,7 @@ export default function ProductShowcase() {
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true, margin: "-10%" },
     transition: { duration: 0.8, ease: "easeOut" }
-  };
+  } as any;
 
   return (
     <section id="products" className="section">
