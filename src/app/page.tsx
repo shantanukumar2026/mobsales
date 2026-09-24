@@ -80,7 +80,7 @@ export default function Home() {
                     transformOrigin: 'bottom center',
                     borderRadius: '24px',
                     overflow: 'hidden',
-                    boxShadow: '0 30px 60px rgba(15, 56, 122, 0.25)',
+                    boxShadow: '0 30px 60px rgba(9, 72, 150, 0.25)',
                     border: '8px solid var(--color-bg)',
                     backgroundColor: 'var(--color-bg)',
                     display: 'flex',
