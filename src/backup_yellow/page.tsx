@@ -186,10 +186,11 @@ export default function Home() {
 
       <ProductShowcase />
 
-      {/* Temporarily removed everything below ENGINEERED PRODUCT SYSTEMS per user request
       <InteractiveMoldExplorer />
 
       <AnimationShowcase />
+
+      {/* Solutions placeholder */}
 
       <EngineeringSection />
 
@@ -199,10 +200,14 @@ export default function Home() {
 
       <QualitySection />
 
+      {/* Projects placeholder */}
+
+      {/* Company placeholder */}
+
       <ResourcesSection />
 
       <QuoteForm />
-      */}
+
       <Footer />
     </main>
   );

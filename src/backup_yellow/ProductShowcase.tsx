@@ -49,7 +49,7 @@ export default function ProductShowcase() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem' }}>
           <div style={{ maxWidth: '800px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem' }}>
-              <div style={{ width: '3px', height: '16px', backgroundColor: '#F2C500' }} />
+              <div style={{ width: '3px', height: '16px', backgroundColor: '#0056ff' }} />
               <span style={{ fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', color: '#334155', textTransform: 'uppercase' }}>
                 ENGINEERED PRODUCT SYSTEMS
               </span>
@@ -107,7 +107,7 @@ export default function ProductShowcase() {
 
               {/* Product Info */}
               <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
-                <div style={{ fontSize: '1rem', fontWeight: 900, color: '#0056ff', marginBottom: '0.5rem' }}>
+                <div style={{ fontSize: '1rem', fontWeight: 900, color: '#F2C500', marginBottom: '0.5rem' }}>
                   {product.num}
                 </div>
                 <h3 style={{ fontSize: '1.75rem', fontWeight: 900, color: '#124A91', marginBottom: '1.5rem', lineHeight: 1.1, textTransform: 'uppercase' }}>

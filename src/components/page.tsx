@@ -8,16 +8,13 @@ import { ArrowRight } from "lucide-react";
 import CustomCursor from "@/components/CustomCursor";
 import Header from "@/components/Header";
 import ProductShowcase from "@/components/ProductShowcase";
-import QuoteForm from "@/components/QuoteForm";
-import Footer from "@/components/Footer";
+
 import ProcessSection from "@/components/ProcessSection";
 import EngineeringSection from "@/components/EngineeringSection";
-import WhySteelFormsSection from "@/components/WhySteelFormsSection";
+
 import AnimationShowcase from "@/components/AnimationShowcase";
 import InteractiveMoldExplorer from "@/components/InteractiveMoldExplorer";
-import IndustriesSection from "@/components/IndustriesSection";
-import QualitySection from "@/components/QualitySection";
-import ResourcesSection from "@/components/ResourcesSection";
+
 
 const HERO_CARDS = [
   {
@@ -186,24 +183,14 @@ export default function Home() {
 
       <ProductShowcase />
 
-      {/* Temporarily removed everything below ENGINEERED PRODUCT SYSTEMS per user request
       <InteractiveMoldExplorer />
 
       <AnimationShowcase />
 
+
+
       <EngineeringSection />
 
-      <WhySteelFormsSection />
-
-      <IndustriesSection />
-
-      <QualitySection />
-
-      <ResourcesSection />
-
-      <QuoteForm />
-      */}
-      <Footer />
     </main>
   );
 }
