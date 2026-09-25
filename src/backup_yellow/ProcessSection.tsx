@@ -2,7 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ClipboardList, PenTool, Monitor, CheckCircle, Truck } from "lucide-react";
-import CustomVideoPlayer from "./CustomVideoPlayer";
+import CustomVideoPlayer from "../components/CustomVideoPlayer";
 
 export default function ProcessSection() {
   const containerRef = useRef<HTMLDivElement>(null);
