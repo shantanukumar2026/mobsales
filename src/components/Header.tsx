@@ -43,13 +43,13 @@ export default function Header() {
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
           <div style={{ display: 'flex', gap: '2rem' }}>
-            <a href="mailto:sales@mobsales.com" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
+            <a href="mailto:noreply@mobsales.test" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
               <Mail size={14} color="#124A91" />
-              sales@mobsales.com
+              noreply@mobsales.test
             </a>
-            <a href="tel:+12345678900" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
+            <a href="tel:+16313272544" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
               <Phone size={14} color="#124A91" />
-              +1 234 567 8900
+              +1 (631) 327-2544
             </a>
           </div>
 

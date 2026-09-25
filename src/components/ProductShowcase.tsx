@@ -42,12 +42,12 @@ export default function ProductShowcase() {
   };
 
   return (
-    <section id="products" style={{ backgroundColor: '#F3F5F6', padding: '8rem 0', overflow: 'hidden' }}>
+    <section id="products" style={{ backgroundColor: '#F3F5F6', padding: '4rem 0', overflow: 'hidden' }}>
       <div className="container">
 
         {/* Header Section */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem' }}>
-          <div style={{ maxWidth: '800px' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'flex-end', marginBottom: '4rem' }}>
+          <div style={{ flex: '1 1 55%', minWidth: '400px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem' }}>
               <div style={{ width: '3px', height: '16px', backgroundColor: '#F2C500' }} />
               <span style={{ fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', color: '#334155', textTransform: 'uppercase' }}>
@@ -55,17 +55,17 @@ export default function ProductShowcase() {
               </span>
             </div>
 
-            <h2 style={{ fontSize: '4.5rem', fontWeight: 900, color: '#124A91', lineHeight: 1, letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
+            <h2 style={{ margin: 0, fontSize: 'clamp(3.5rem, 6vw, 6rem)', fontWeight: 900, color: '#124A91', lineHeight: 1, letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
               FORMS BUILT<br />AROUND YOUR<br />PRODUCTION.
             </h2>
           </div>
 
-          <div style={{ maxWidth: '400px', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-            <p style={{ fontSize: '1.1rem', color: '#334155', lineHeight: 1.6, margin: 0 }}>
+          <div style={{ flex: '1 1 35%', minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '2rem', paddingBottom: '0.5rem' }}>
+            <p style={{ fontSize: '1.15rem', color: '#334155', lineHeight: 1.6, margin: 0, borderLeft: '3px solid #124A91', paddingLeft: '1.5rem' }}>
               From infrastructure components to structural precast systems, MOB SALES develops precision forms and molds for repeatable concrete production.
             </p>
 
-            <div style={{ display: 'flex', gap: '1rem' }}>
+            <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
               <button onClick={() => scroll('left')} style={{ width: '48px', height: '48px', borderRadius: '50%', border: '1px solid #D9DDE0', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#124A91' }}>
                 <ChevronLeft size={24} />
               </button>

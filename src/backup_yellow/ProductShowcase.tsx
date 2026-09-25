@@ -42,7 +42,7 @@ export default function ProductShowcase() {
   };
 
   return (
-    <section id="products" style={{ backgroundColor: '#F3F5F6', padding: '8rem 0', overflow: 'hidden' }}>
+    <section id="products" style={{ backgroundColor: '#F3F5F6', padding: '4rem 0', overflow: 'hidden' }}>
       <div className="container">
 
         {/* Header Section */}

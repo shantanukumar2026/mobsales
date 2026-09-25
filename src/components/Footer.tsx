@@ -209,13 +209,13 @@ export default function Footer() {
               <h4 style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.05em', color: '#93C5FD', marginBottom: '1.5rem', textTransform: 'uppercase' }}>HEADQUARTERS</h4>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', color: '#F1F5F9', fontSize: '0.9rem' }}>
-                  <MapPin size={18} color="#93C5FD" /> 1234 Industrial Way,<br />Houston, TX 77001, USA
+                  <MapPin size={18} color="#93C5FD" /> 132 Lockwood,<br />Huntington, NY 11763
                 </li>
                 <li style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#F1F5F9', fontSize: '0.9rem' }}>
-                  <Phone size={18} color="#93C5FD" /> +1 234 567 8900
+                  <Phone size={18} color="#93C5FD" /> +1 (631) 327-2544 &nbsp;|&nbsp; 631-827-7408
                 </li>
                 <li style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#F1F5F9', fontSize: '0.9rem' }}>
-                  <Mail size={18} color="#93C5FD" /> sales@mobsales.com
+                  <Mail size={18} color="#93C5FD" /> noreply@mobsales.test
                 </li>
               </ul>
             </div>
