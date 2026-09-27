@@ -129,6 +129,7 @@ export default function ProductShowcase() {
             </motion.div>
           ))}
         </div>
+      </div>
       <style dangerouslySetInnerHTML={{
         __html: `
         .hide-scrollbar::-webkit-scrollbar {
