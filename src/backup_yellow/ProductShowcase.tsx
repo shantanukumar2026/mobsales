@@ -9,25 +9,25 @@ const PRODUCTS = [
     num: "01",
     name: "PRECAST WALL MOLDS",
     tags: ["WALL SYSTEMS", "STEEL FORMS", "CUSTOM DIMENSIONS"],
-    img: "/images/12_10__30_48_mold_rectangle_14_frame1_no_logo.jpg"
+    img: "/kfmolds/LegoBlock_NEW-L2.jpg"
   },
   {
     num: "02",
     name: "TRENCH MOLDS",
     tags: ["DRAINAGE", "INFRASTRUCTURE", "HEAVY DUTY"],
-    img: "/images/Mega_Mold_Trench_Red_frame1_no_logo.jpg"
+    img: "/kfmolds/alaska55_NEW-1.jpg"
   },
   {
     num: "03",
     name: "BOX CULVERT MOLDS",
     tags: ["INFRASTRUCTURE", "CUSTOM FORMING", "REPEATABLE PRODUCTION"],
-    img: "/images/Mega_Mold_Trench_Black_frame1.jpg"
+    img: "/kfmolds/Box-Culvert-1.jpg"
   },
   {
     num: "04",
     name: "CONCRETE PIPE MOLDS",
     tags: ["WATER & SEWER", "STEEL TOOLING", "PRECISION FORMING"],
-    img: "/images/ring_mold_animation_202_frame1_no_logo.jpg"
+    img: "/kfmolds/Manhole-Riser-1500-2100-scaled.jpg"
   }
 ];
 

@@ -33,7 +33,7 @@ const Section04Capabilities = () => {
       app: "BUILDING SYSTEMS" 
     },
     { 
-      img: "/images/Mega_Mold_Ring_mold_frame1_no_logo.jpg", 
+      img: "/kfmolds/Manhole-Riser-1500-2100-scaled.jpg", 
       name: "RING MOLD SYSTEM", 
       desc: "Precision circular steel mold engineered specifically for high-volume manhole and drainage component manufacturing. Features adjustable sizing mechanisms and robust reinforcements to withstand the rigorous demands of continuous industrial precast operations.", 
       app: "DRAINAGE" 
@@ -45,7 +45,7 @@ const Section04Capabilities = () => {
       app: "INFRASTRUCTURE" 
     },
     {
-      img: "/images/12_10__30_48_mold_rectangle_14_frame1_no_logo.jpg",
+      img: "/kfmolds/Expandable-Box-Culvert-12x12x8-4-3.jpg",
       name: "RECTANGLE CATCH BASIN",
       desc: "Highly adjustable rectangular forms constructed for customized structural dimensions in stormwater management. The reinforced steel design prevents deflection during pouring, resulting in perfectly square catch basins tailored to complex utility layouts.",
       app: "UTILITIES"
@@ -254,7 +254,7 @@ const Section09Quality = () => {
   return (
     <section style={{ display: 'flex', flexWrap: 'wrap', backgroundColor: '#fff', width: '100%', borderTop: '1px solid #eaeaea', borderBottom: '1px solid #eaeaea' }}>
       <div style={{ flex: '1 1 50%', position: 'relative', minHeight: '500px', borderRight: '1px solid #eaeaea' }}>
-        <Image src="/images/12_10__30_48_mold_rectangle_14_frame1_no_logo.jpg" alt="Quality Inspection" fill style={{ objectFit: 'cover' }} />
+        <Image src="/kfmolds/Segment-14-5-4.jpg" alt="Quality Inspection" fill style={{ objectFit: 'cover' }} />
       </div>
       <div style={{ flex: '1 1 50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '6rem 4rem' }}>
         <div style={{ color: '#F2C500', fontWeight: 800, letterSpacing: '0.15em', fontSize: '0.85rem', marginBottom: '1rem' }}>QUALITY CONTROL</div>
@@ -306,7 +306,7 @@ const Section10Resources = () => {
 const Section11Library = () => {
   const libraryItems = [
     { 
-      img: "/images/Mega_Mold_Trench_Red_frame1_no_logo.jpg", 
+      img: "/kfmolds/alaska55_NEW-1.jpg", 
       product: "HEAVY DUTY TRENCH MOLD", 
       app: "DRAINAGE", 
       type: "STEEL FORM"
@@ -318,17 +318,12 @@ const Section11Library = () => {
       type: "HEAVY DUTY"
     },
     { 
-      img: "/images/ring_mold_animation_202_frame1_no_logo.jpg", 
+      img: "/kfmolds/Manhole-Riser-1500-2100-scaled.jpg", 
       product: "PRECISION RING MOLD", 
       app: "INFRASTRUCTURE", 
       type: "MODULAR SYSTEM"
     },
-    { 
-      img: "/images/12_10__30_48_mold_rectangle_14_frame1_no_logo.jpg", 
-      product: "RECTANGLE CATCH BASIN", 
-      app: "UTILITIES", 
-      type: "CUSTOM FORM"
-    },
+
     { 
       img: "/kfmolds/Manhole-Concrete-Assembly-scaled.jpg", 
       product: "MANHOLE ASSEMBLY", 
@@ -336,10 +331,16 @@ const Section11Library = () => {
       type: "ASSEMBLY"
     },
     { 
-      img: "/images/Mega_Mold_Trench_Black_frame1.jpg", 
+      img: "/kfmolds/Box-Culvert-1.jpg", 
       product: "BOX CULVERT MOLD", 
       app: "INFRASTRUCTURE", 
       type: "CUSTOM FORMING"
+    },
+    { 
+      img: "/kfmolds/Expandable-Box-Culvert-12x12x8-4-3.jpg", 
+      product: "EXPANDABLE BOX CULVERT", 
+      app: "INFRASTRUCTURE", 
+      type: "MODULAR SYSTEM"
     }
   ];
 
