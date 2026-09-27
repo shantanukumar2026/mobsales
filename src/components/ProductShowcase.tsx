@@ -42,7 +42,7 @@ export default function ProductShowcase() {
   };
 
   return (
-    <section id="products" style={{ backgroundColor: '#F3F5F6', padding: '4rem 0', overflow: 'hidden' }}>
+    <section id="products" style={{ backgroundColor: '#fff', padding: '4rem 0', overflow: 'hidden' }}>
       <div className="container">
 
         {/* Header Section */}
@@ -50,23 +50,23 @@ export default function ProductShowcase() {
           <div style={{ flex: '1 1 55%', minWidth: '400px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem' }}>
               <div style={{ width: '3px', height: '16px', backgroundColor: '#F2C500' }} />
-              <span style={{ fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', color: '#334155', textTransform: 'uppercase' }}>
+              <span style={{ fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', color: '#004B87', textTransform: 'uppercase' }}>
                 ENGINEERED PRODUCT SYSTEMS
               </span>
             </div>
 
-            <h2 style={{ margin: 0, fontSize: 'clamp(3.5rem, 6vw, 6rem)', fontWeight: 900, color: '#124A91', lineHeight: 1, letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
+            <h2 style={{ margin: 0, fontSize: 'clamp(3.5rem, 6vw, 6rem)', fontWeight: 900, color: '#004B87', lineHeight: 1, letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
               FORMS BUILT<br />AROUND YOUR<br />PRODUCTION.
             </h2>
           </div>
 
           <div style={{ flex: '1 1 35%', minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '2rem', paddingBottom: '0.5rem' }}>
-            <p style={{ fontSize: '1.15rem', color: '#334155', lineHeight: 1.6, margin: 0, borderLeft: '3px solid #124A91', paddingLeft: '1.5rem' }}>
+            <p style={{ fontSize: '1.15rem', color: '#3973A4', fontWeight: 500, lineHeight: 1.6, margin: 0, borderLeft: '3px solid #004B87', paddingLeft: '1.5rem' }}>
               From infrastructure components to structural precast systems, MOB SALES develops precision forms and molds for repeatable concrete production.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
-              <button onClick={() => scroll('left')} style={{ width: '48px', height: '48px', borderRadius: '50%', border: '1px solid #D9DDE0', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#124A91' }}>
+              <button onClick={() => scroll('left')} style={{ width: '48px', height: '48px', borderRadius: '50%', border: '1px solid #D9DDE0', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#004B87' }}>
                 <ChevronLeft size={24} />
               </button>
               <button onClick={() => scroll('right')} style={{ width: '48px', height: '48px', borderRadius: '50%', border: '1px solid #F2C500', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#F2C500' }}>
@@ -107,22 +107,22 @@ export default function ProductShowcase() {
 
               {/* Product Info */}
               <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
-                <div style={{ fontSize: '1rem', fontWeight: 900, color: '#0056ff', marginBottom: '0.5rem' }}>
+                <div style={{ fontSize: '1rem', fontWeight: 900, color: '#F2C500', marginBottom: '0.5rem' }}>
                   {product.num}
                 </div>
-                <h3 style={{ fontSize: '1.75rem', fontWeight: 900, color: '#124A91', marginBottom: '1.5rem', lineHeight: 1.1, textTransform: 'uppercase' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: 900, color: '#004B87', marginBottom: '1.5rem', lineHeight: 1.1, textTransform: 'uppercase' }}>
                   {product.name}
                 </h3>
 
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem', marginTop: 'auto' }}>
                   {product.tags.map((tag, i) => (
-                    <span key={i} style={{ padding: '0.25rem 0.75rem', backgroundColor: '#F3F5F6', border: '1px solid #D9DDE0', borderRadius: '100px', fontSize: '0.7rem', fontWeight: 700, color: '#334155', letterSpacing: '0.05em' }}>
+                    <span key={i} style={{ padding: '0.25rem 0.75rem', backgroundColor: '#FAFAF7', border: '1px solid #004B87', borderRadius: '100px', fontSize: '0.7rem', fontWeight: 700, color: '#004B87', letterSpacing: '0.05em' }}>
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <button style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#124A91', fontSize: '0.85rem', fontWeight: 800, backgroundColor: 'transparent', border: 'none', padding: 0, cursor: 'pointer', letterSpacing: '0.05em' }}>
+                <button style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#004B87', fontSize: '0.85rem', fontWeight: 800, backgroundColor: 'transparent', border: 'none', padding: 0, cursor: 'pointer', letterSpacing: '0.05em' }}>
                   VIEW PRODUCT <ArrowRight size={16} />
                 </button>
               </div>

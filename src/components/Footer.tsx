@@ -5,7 +5,7 @@ import { ArrowRight, Globe, MapPin, Phone, Mail, CheckCircle2, ShieldCheck, Head
 
 export default function Footer() {
   return (
-    <footer style={{ width: '100%', overflow: 'hidden', backgroundColor: '#FAFAF7', fontFamily: 'var(--font-sans)' }}>
+    <footer style={{ width: '100%', overflow: 'hidden', backgroundColor: '#FAFAF7', fontFamily: 'var(--font-sans)', borderTop: '4px solid #004B87' }}>
 
       {/* 1. TOP SECTION (Links & CTA) */}
       <div style={{ position: 'relative', width: '100%', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', borderBottom: '1px solid #E2E8F0' }}>
