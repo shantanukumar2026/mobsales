@@ -7,10 +7,10 @@ export default function IndustriesSection() {
   const [hoveredIdx, setHoveredIdx] = useState<number | null>(0);
 
   const industries = [
-    { id: "infrastructure", label: "INFRASTRUCTURE", img: "/images/trnch_mold_animation_24_frame1.jpg", desc: "Heavy-duty forms for bridges, retaining walls, and highway barriers." },
-    { id: "utilities", label: "UTILITIES & POWER", img: "/images/ring_mold_animation_202_frame1.jpg", desc: "Precision molds for electrical vaults, utility trenches, and manholes." },
-    { id: "water", label: "WATER SYSTEMS", img: "/images/trnch_mold_animation_333_frame1.jpg", desc: "Systems for culverts, sanitary pipes, and high-volume catch basins." },
-    { id: "commercial", label: "COMMERCIAL", img: "/images/12_10__30_48_mold_rectangle_14_frame1.jpg", desc: "Custom architectural precast forms for building facades and structural elements." }
+    { id: "infrastructure", label: "INFRASTRUCTURE", img: "/kfmolds/Box-Culvert-1.jpg", desc: "Heavy-duty forms for bridges, retaining walls, and highway barriers." },
+    { id: "utilities", label: "UTILITIES & POWER", img: "/kfmolds/Manhole-Riser-1500-2100-scaled.jpg", desc: "Precision molds for electrical vaults, utility trenches, and manholes." },
+    { id: "water", label: "WATER SYSTEMS", img: "/kfmolds/alaska55_NEW-1.jpg", desc: "Systems for culverts, sanitary pipes, and high-volume catch basins." },
+    { id: "heavy_civil", label: "HEAVY CIVIL", img: "/kfmolds/LegoBlock-600x600x2400-3.jpg", desc: "Robust forming solutions for large scale retaining walls and civil engineering projects." }
   ];
 
   return (

@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${sora.variable} ${jakarta.variable}`}>
+      <body className={`${sora.variable} ${jakarta.variable}`} suppressHydrationWarning>
         {children}
       </body>
     </html>

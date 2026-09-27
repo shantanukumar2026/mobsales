@@ -30,7 +30,7 @@ const Section04Capabilities = () => {
       img: "/kfmolds/LegoBlock-600x600x2400-3.jpg", 
       name: "BLOCK MOLD", 
       desc: "Heavy-duty steel forming system designed for the efficient production of precast blocks. Engineered with precision tolerances and rapid demolding capabilities to maximize throughput while maintaining absolute structural integrity for high-volume manufacturing.", 
-      app: "BUILDING SYSTEMS" 
+      app: "RETAINING WALLS" 
     },
     { 
       img: "/kfmolds/Manhole-Riser-1500-2100-scaled.jpg", 
@@ -146,7 +146,7 @@ const Section05Applications = () => {
     { name: "INFRASTRUCTURE", desc: "Heavy civil applications including bridges, retaining walls, and highway barriers." },
     { name: "DRAINAGE", desc: "Catch basins, manholes, inlets, and large-scale stormwater systems." },
     { name: "UTILITIES", desc: "Underground vaults, electrical enclosures, and communication handholes." },
-    { name: "BUILDING SYSTEMS", desc: "Architectural precast, structural columns, and flooring systems." },
+    { name: "RETAINING WALLS", desc: "Heavy-duty retaining wall blocks, mechanically stabilized earth (MSE) systems, and abutments." },
     { name: "INDUSTRIAL PRECAST", desc: "Specialized industrial components, foundations, and heavy-duty slabs." },
     { name: "CUSTOM APPLICATIONS", desc: "Bespoke forming solutions for unique and demanding project requirements." }
   ];
@@ -314,7 +314,7 @@ const Section11Library = () => {
     { 
       img: "/kfmolds/LegoBlock-600x600x2400-3.jpg", 
       product: "INTERLOCKING BLOCK MOLD", 
-      app: "BUILDING SYSTEMS", 
+      app: "RETAINING WALLS", 
       type: "HEAVY DUTY"
     },
     { 

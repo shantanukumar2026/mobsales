@@ -214,10 +214,10 @@ export default function Header() {
                   <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(242, 197, 0, 0.1)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                      <Box size={24} color="#F2C500" />
                   </div>
-                  <h4 style={{ color: '#F2C500', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Building Systems</h4>
+                  <h4 style={{ color: '#F2C500', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Structural & Civil Molds</h4>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                  {['Architectural Wall Panels', 'Structural Column Forms', 'Floor Slab Forms', 'Interlocking Blocks', 'Stair & Elevator Molds'].map((item, idx) => (
+                  {['Bridge Girders', 'Box Culverts', 'Prestressed Forms', 'Interlocking Blocks', 'Highway Barriers'].map((item, idx) => (
                     <motion.a 
                       key={item} 
                       href="#" 
@@ -240,7 +240,7 @@ export default function Header() {
                   <h4 style={{ color: '#F2C500', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Specialty Forms</h4>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                  {['Highway Barriers', 'Retaining Wall Systems', 'Custom Architecture', 'Lifting Accessories', 'Form Liners & Textures'].map((item, idx) => (
+                  {['Retaining Wall Systems', 'Median Barriers', 'Custom Architecture', 'Lifting Accessories', 'Form Liners & Textures'].map((item, idx) => (
                     <motion.a 
                       key={item} 
                       href="#" 

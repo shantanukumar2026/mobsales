@@ -7,8 +7,8 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 const PRODUCTS = [
   {
     num: "01",
-    name: "PRECAST WALL MOLDS",
-    tags: ["WALL SYSTEMS", "STEEL FORMS", "CUSTOM DIMENSIONS"],
+    name: "INTERLOCKING BLOCK MOLDS",
+    tags: ["RETAINING BLOCKS", "STEEL FORMS", "CUSTOM DIMENSIONS"],
     img: "/kfmolds/LegoBlock_NEW-L2.jpg"
   },
   {
@@ -25,7 +25,7 @@ const PRODUCTS = [
   },
   {
     num: "04",
-    name: "CONCRETE PIPE MOLDS",
+    name: "MANHOLE RISER MOLDS",
     tags: ["WATER & SEWER", "STEEL TOOLING", "PRECISION FORMING"],
     img: "/kfmolds/Manhole-Riser-1500-2100-scaled.jpg"
   }
