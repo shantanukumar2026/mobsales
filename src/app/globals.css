@@ -1,14 +1,25 @@
 :root {
-  --color-primary: #F4C400; /* Industrial Yellow */
-  --color-accent: #F28C28; /* Safety Orange */
+  /* Approved 4-Color Blue Palette */
+  --blue-primary: #00BBFF;
+  --blue-accent: #0085F4;
+  --blue-dark: #004AAD;
+  --blue-deep: #0004AD;
+
+  /* Semantic Variables */
+  --color-primary: var(--blue-accent); /* #0085F4 (Vibrant) for bright, sharp branding */
+  --color-primary-dark: var(--blue-dark); /* #004AAD (Dark) for high-contrast active states */
+  --color-accent: var(--blue-primary); /* #00BBFF (Cyan) for razor-sharp highlights */
   
-  --color-bg: #FFFFFF; /* Pure White */
-  --color-bg-warm: #FAFAF7; /* Warm White */
-  --color-concrete: #E8E8E3; /* Concrete Gray */
-  --color-steel: #D4D5D1;
+  --color-bg: #FFFFFF;
+  --color-bg-warm: #FFFFFF; /* Forced to white */
+  --color-concrete: #FFFFFF; /* Forced to white */
+  --color-steel: #FFFFFF; /* Forced to white */
   
-  --color-text: #094896;
-  --color-primary-dark: #D4A700;
+  --color-text: var(--blue-deep); /* #0004AD (Deep Navy) for absolute maximum contrast */
+  --color-text-muted: #0056B0; /* #0056B0 (Vibrant Dark Blue) for readable, clean descriptions */
+
+  --color-gradient-primary: linear-gradient(135deg, var(--blue-accent) 0%, var(--blue-primary) 100%);
+  --color-gradient-dark: linear-gradient(135deg, var(--blue-deep) 0%, var(--blue-dark) 100%);
   
   --font-sans: 'Sora', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
@@ -43,10 +54,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.05;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+  color: var(--color-primary-dark);
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 a {
@@ -115,7 +130,9 @@ button {
 .text-body-large {
   font-size: clamp(1.125rem, 1.5vw, 1.5rem);
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  letter-spacing: 0.01em;
 }
 
 .text-label {
@@ -141,7 +158,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  background-color: var(--color-text);
+  background: var(--color-gradient-primary);
   color: var(--color-bg);
   padding: 1.25rem 2.5rem;
   font-size: 0.875rem;
@@ -149,13 +166,15 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: var(--transition-fast);
-  border: 1px solid var(--color-text);
+  border: none;
+  box-shadow: 0 4px 15px rgba(240, 246, 252, 0.3);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-color: var(--color-primary);
+  background: linear-gradient(135deg, #00bbff 0%, #0085F4 100%);
+  color: var(--color-bg);
+  box-shadow: 0 6px 20px rgba(0, 187, 255, 0.4);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -164,18 +183,22 @@ button {
   justify-content: center;
   gap: 0.75rem;
   background-color: transparent;
-  color: var(--color-text);
+  color: var(--color-primary-dark);
   padding: 1.25rem 2.5rem;
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: var(--transition-fast);
-  border: 1px solid var(--color-steel);
+  border: 2px solid var(--color-primary-dark);
 }
 
 .btn-secondary:hover {
-  border-color: var(--color-text);
+  background: var(--color-gradient-primary);
+  color: var(--color-bg);
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(240, 246, 252, 0.2);
 }
 
 .yellow-accent {
@@ -210,7 +233,7 @@ button {
   left: 0;
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(44, 62, 80, 0.2);
+  border: 1px solid rgba(0, 4, 173, 0.2);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   pointer-events: none;
@@ -223,7 +246,7 @@ button {
   width: 48px;
   height: 48px;
   background-color: transparent;
-  border-color: rgba(244, 196, 0, 0.8);
+  border-color: rgba(0, 187, 255, 0.8);
   border-width: 2px;
   backdrop-filter: none;
 }
@@ -237,7 +260,7 @@ button {
   z-index: 100;
   transition: var(--transition-smooth);
   background-color: var(--color-bg);
-  box-shadow: 0 4px 20px rgba(0, 59, 70, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 4, 173, 0.05);
   display: flex;
   justify-content: center;
 }
@@ -257,7 +280,7 @@ button {
 }
 
 .header.scrolled {
-  box-shadow: 0 4px 30px rgba(0, 59, 70, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 4, 173, 0.1);
 }
 
 .brand-logo {
@@ -306,7 +329,7 @@ button {
 
 .nav-link:hover {
   background-color: var(--color-bg);
-  box-shadow: 0 4px 15px rgba(9, 72, 150, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 4, 173, 0.1);
   color: var(--color-primary-dark);
 }
 
@@ -341,9 +364,9 @@ button {
   bottom: 0;
   left: 0;
   width: 100%;
-  border-top: 1px solid rgba(44, 62, 80, 0.1);
+  border-top: 1px solid rgba(0, 4, 173, 0.1);
   z-index: 2;
-  background-color: rgba(250, 250, 247, 0.8);
+  background-color: rgba(248, 250, 252, 0.8);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;

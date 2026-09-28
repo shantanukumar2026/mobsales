@@ -1,0 +1,122 @@
+[
+  {
+    "id": "bridge-beam-girder-forms",
+    "name": "BRIDGE BEAM / GIRDER FORMS",
+    "desc": "Forms for producing precast and prestressed structural members used in bridge construction.",
+    "img": "/kfmolds/Girder-21.jpg"
+  },
+  {
+    "id": "box-culvert-forms",
+    "name": "BOX CULVERT FORMS",
+    "desc": "Form systems for producing rectangular precast culvert sections for drainage and transportation infrastructure.",
+    "img": "/kfmolds/Box-Culvert-1.jpg"
+  },
+  {
+    "id": "3-sided-culvert-forms",
+    "name": "3-SIDED CULVERT FORMS",
+    "desc": "Precision forms for bottomless culvert structures, allowing natural streambeds and heavy load capacities.",
+    "img": "/kfmolds/Expandable-Box-Culvert-12x12x8-4-3.jpg"
+  },
+  {
+    "id": "highway-barrier-forms",
+    "name": "HIGHWAY BARRIER FORMS",
+    "desc": "Forms for producing precast concrete barrier elements for roadway and transportation applications.",
+    "img": "/kfmolds/Alaska-Barrier-20.jpg"
+  },
+  {
+    "id": "retaining-wall-forms",
+    "name": "RETAINING WALL FORMS",
+    "desc": "Form systems for large-scale retaining blocks and mechanically stabilized earth panels.",
+    "img": "/kfmolds/LegoBlock-600x600x2400-3.jpg"
+  },
+  {
+    "id": "sound-wall-forms",
+    "name": "SOUND WALL FORMS",
+    "desc": "Forms for casting large concrete panels used for noise mitigation along highways and railways.",
+    "img": "/kfmolds/Vertical-Wall-Mould-41-scaled-e1658349221916.jpg"
+  },
+  {
+    "id": "manhole-forms",
+    "name": "MANHOLE FORMS",
+    "desc": "Form systems for producing precast manhole components for underground utility networks.",
+    "img": "/kfmolds/Manhole-Riser-1500-1250x1000-web.jpg"
+  },
+  {
+    "id": "utility-vault-forms",
+    "name": "UTILITY VAULT FORMS",
+    "desc": "Robust mold systems for casting underground enclosures protecting electrical and telecom infrastructure.",
+    "img": "/images/12_10__30_48_mold_rectangle_17_frame1.jpg"
+  },
+  {
+    "id": "pull-box-junction-box-forms",
+    "name": "PULL BOX / JUNCTION BOX FORMS",
+    "desc": "Precise forms for producing utility access boxes with exact tolerances for covers and conduit entry.",
+    "img": "/images/12_10__30_48_mold_rectangle_5277_frame1.jpg"
+  },
+  {
+    "id": "pipe-forms",
+    "name": "PIPE FORMS",
+    "desc": "Industrial molds for casting reinforced concrete pipes used in sewer and large-volume drainage.",
+    "img": "/images/Mega_Mold_Ring_mold_frame1_no_logo.jpg"
+  },
+  {
+    "id": "stormwater-structure-forms",
+    "name": "STORMWATER STRUCTURE FORMS",
+    "desc": "Forms designed for custom and standard stormwater management precast units.",
+    "img": "/images/Mega_Mold_Trench_Red_frame1_no_logo.jpg"
+  },
+  {
+    "id": "catch-basin-curb-inlet-forms",
+    "name": "CATCH BASIN / CURB INLET FORMS",
+    "desc": "Heavy-duty steel molds for roadway drainage structures, grates, and curb inlets.",
+    "img": "/images/Mega_Mold_Trench_Black_frame1.jpg"
+  },
+  {
+    "id": "wet-well-lift-station-forms",
+    "name": "WET WELL / LIFT STATION FORMS",
+    "desc": "Large-diameter forms for deep underground wastewater pumping and collection stations.",
+    "img": "/images/ring_mold_animation_202_frame1_no_logo.jpg"
+  },
+  {
+    "id": "water-wastewater-tank-forms",
+    "name": "WATER & WASTEWATER TANK FORMS",
+    "desc": "Forming systems for producing modular tank segments for liquid containment facilities.",
+    "img": "/kfmolds/Segment-14-5-4.jpg"
+  },
+  {
+    "id": "foundation-base-forms",
+    "name": "FOUNDATION / BASE FORMS",
+    "desc": "Forms for precasting structural foundations, footings, and load-bearing base elements.",
+    "img": "/kfmolds/Tilting-Table-WB-2-91-scaled-e1659036385198.jpg"
+  },
+  {
+    "id": "utility-equipment-pad-forms",
+    "name": "UTILITY / EQUIPMENT PAD FORMS",
+    "desc": "Molds for producing flat, reinforced concrete slabs for supporting heavy electrical or mechanical equipment.",
+    "img": "/images/untitled_29_frame3.jpg"
+  },
+  {
+    "id": "railroad-forms",
+    "name": "RAILROAD FORMS",
+    "desc": "Forms for railroad ties, grade crossings, and specialized railway infrastructure precast.",
+    "img": "/kfmolds/Segment-11.jpg"
+  },
+  {
+    "id": "marine-coastal-forms",
+    "name": "MARINE / COASTAL FORMS",
+    "desc": "Complex molds for casting coastal protection units like tetrapods, accropodes, and seawalls.",
+    "img": "/kfmolds/Accropode-16m3.jpg"
+  },
+  {
+    "id": "tunnel-forms",
+    "name": "TUNNEL FORMS",
+    "desc": "Precision steel molds for casting curved tunnel lining segments for infrastructure and transit.",
+    "img": "/kfmolds/Segment-12.jpg"
+  },
+  {
+    "id": "custom-infrastructure-forms",
+    "name": "CUSTOM INFRASTRUCTURE FORMS",
+    "desc": "Engineered solutions tailored precisely for unique, complex, and heavy civil precast projects.",
+    "img": "/kfmolds/Quay-Block-Mold-Custom.jpg"
+  }
+]

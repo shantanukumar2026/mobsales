@@ -33,7 +33,7 @@ export default function IndustriesSection() {
           </motion.div>
         ))}
         {/* Vignette Overlay */}
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to right, rgba(250,250,247,1) 0%, rgba(250,250,247,0.8) 40%, rgba(250,250,247,0) 100%)' }} />
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(to right, rgba(248, 250, 252, 1) 0%, rgba(248, 250, 252, 0.8) 40%, rgba(248, 250, 252, 0) 100%)' }} />
       </div>
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
@@ -54,18 +54,21 @@ export default function IndustriesSection() {
                     transition: 'opacity 0.4s ease'
                   }}
                 >
-                  <h3 style={{ 
-                    fontFamily: 'var(--font-sans)', 
-                    fontSize: 'clamp(2rem, 4vw, 4rem)', 
-                    fontWeight: 900, 
-                    lineHeight: 1,
-                    textTransform: 'uppercase',
-                    color: hoveredIdx === idx ? 'var(--color-primary-dark)' : 'var(--color-text)',
-                    transition: 'color 0.4s ease, transform 0.4s ease',
-                    transform: hoveredIdx === idx ? 'translateX(20px)' : 'translateX(0)'
-                  }}>
-                    {ind.label}
-                  </h3>
+                    <h3 style={{ 
+                      fontFamily: 'var(--font-sans)', 
+                      fontSize: 'clamp(2rem, 4vw, 4rem)', 
+                      fontWeight: 900, 
+                      lineHeight: 1.1,
+                      textTransform: 'uppercase',
+                      background: hoveredIdx === idx ? 'linear-gradient(90deg, var(--color-primary-dark) 0%, #0085F4 100%)' : 'none',
+                      color: hoveredIdx === idx ? 'transparent' : 'var(--color-text)',
+                      WebkitBackgroundClip: hoveredIdx === idx ? 'text' : 'border-box',
+                      WebkitTextFillColor: hoveredIdx === idx ? 'transparent' : 'var(--color-text)',
+                      transition: 'transform 0.4s ease',
+                      transform: hoveredIdx === idx ? 'translateX(20px)' : 'translateX(0)'
+                    }}>
+                      {ind.label}
+                    </h3>
                 </div>
               ))}
             </div>
@@ -81,7 +84,7 @@ export default function IndustriesSection() {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <p className="text-body-large" style={{ fontSize: '1.5rem', lineHeight: 1.6, maxWidth: '400px', padding: '2rem', backgroundColor: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(10px)', borderLeft: '4px solid var(--color-primary-dark)' }}>
+                  <p className="text-body-large" style={{ fontSize: '1.5rem', lineHeight: 1.6, maxWidth: '400px', padding: '2.5rem', backgroundColor: 'rgba(240, 246, 252, 0.85)', backdropFilter: 'blur(16px)', borderRadius: '20px', borderLeft: '6px solid var(--color-primary-dark)', boxShadow: '0 20px 40px rgba(0, 4, 173, 0.08)' }}>
                     {industries[hoveredIdx].desc}
                   </p>
                 </motion.div>

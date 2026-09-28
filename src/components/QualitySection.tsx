@@ -24,7 +24,7 @@ export default function QualitySection() {
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
             {features.map((item, idx) => (
-              <div key={idx} className="hover-target" style={{ display: 'flex', gap: '2rem', padding: '2rem', backgroundColor: 'var(--color-bg)', border: '1px solid var(--color-concrete)', borderRadius: '16px', position: 'relative', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.02)' }}>
+              <div key={idx} className="hover-target" style={{ display: 'flex', gap: '2rem', padding: '2rem', backgroundColor: 'var(--color-bg)', border: '1px solid var(--color-concrete)', borderRadius: '16px', position: 'relative', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0, 4, 173, 0.02)' }}>
                 <item.icon size={120} color="var(--color-primary-dark)" style={{ position: 'absolute', right: '-20px', bottom: '-20px', opacity: 0.05, transform: 'rotate(-15deg)' }} />
                 
                 <div style={{ width: '64px', height: '64px', flexShrink: 0, borderRadius: '50%', backgroundColor: 'var(--color-bg-warm)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid var(--color-steel)' }}>

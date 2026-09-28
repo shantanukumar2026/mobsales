@@ -36,39 +36,39 @@ export default function Header() {
       left: 0,
       width: '100%',
       zIndex: 100,
-      backgroundColor: '#FAFAF7',
-      boxShadow: scrolled ? '0 4px 20px rgba(0,0,0,0.05)' : 'none',
-      borderBottom: '2px solid #E2E8F0',
+      backgroundColor: 'var(--color-bg-warm)',
+      boxShadow: scrolled ? '0 4px 20px rgba(0, 4, 173, 0.05)' : 'none',
+      borderBottom: '2px solid #F0F6FC',
       transition: 'box-shadow 0.3s ease',
       boxSizing: 'border-box'
     }}>
 
       {/* Top Bar (Light Gray) */}
-      <div style={{ backgroundColor: '#F3F5F6', padding: '0.5rem 0', borderBottom: '1px solid #E2E8F0', display: (scrolled || isMobile) ? 'none' : 'block' }}>
+      <div style={{ backgroundColor: '#F0F6FC', padding: '0.5rem 0', borderBottom: '1px solid #F0F6FC', display: (scrolled || isMobile) ? 'none' : 'block' }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
           <div style={{ display: 'flex', gap: '2rem' }}>
-            <a href="mailto:noreply@mobsales.test" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
-              <Mail size={14} color="#124A91" />
+            <a href="mailto:noreply@mobsales.test" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--color-text)', fontSize: '0.75rem', fontWeight: 600 }}>
+              <Mail size={14} color="var(--color-text)" />
               noreply@mobsales.test
             </a>
-            <a href="tel:+16313272544" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
-              <Phone size={14} color="#124A91" />
+            <a href="tel:+16313272544" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--color-text)', fontSize: '0.75rem', fontWeight: 600 }}>
+              <Phone size={14} color="var(--color-text)" />
               +1 (631) 327-2544
             </a>
           </div>
 
           <div style={{ display: 'flex', gap: '2rem' }}>
-            <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
-              <Download size={14} color="#124A91" />
+            <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--color-text)', fontSize: '0.75rem', fontWeight: 600 }}>
+              <Download size={14} color="var(--color-text)" />
               Downloads
             </a>
-            <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
-              <MapPin size={14} color="#124A91" />
+            <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--color-text)', fontSize: '0.75rem', fontWeight: 600 }}>
+              <MapPin size={14} color="var(--color-text)" />
               Find a Representative
             </a>
-            <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: '#334155', fontSize: '0.75rem', fontWeight: 600 }}>
-              <User size={14} color="#124A91" />
+            <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--color-text)', fontSize: '0.75rem', fontWeight: 600 }}>
+              <User size={14} color="var(--color-text)" />
               Customer Portal
             </a>
           </div>
@@ -81,7 +81,7 @@ export default function Header() {
 
         {/* Left: Logo Container */}
         <div style={{
-          backgroundColor: isMobile ? 'transparent' : '#FFFFFF',
+          backgroundColor: isMobile ? 'transparent' : 'var(--color-bg)',
           padding: isMobile ? '0 1rem' : '0 4rem 0 2rem',
           display: 'flex',
           alignItems: 'center',
@@ -94,7 +94,7 @@ export default function Header() {
           height: '100%'
         }}>
           <Link href="/" style={{ position: 'relative', width: isMobile ? '200px' : '260px', height: isMobile ? '50px' : '70px', cursor: 'pointer', marginRight: isMobile ? '0' : '1rem', display: 'block' }}>
-            <Image src="/logo.png" alt="MOB SALES Logo" fill style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center' }} />
+            <Image src="/logo.png" alt="MOB SALES Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center' }} />
           </Link>
         </div>
 
@@ -109,19 +109,22 @@ export default function Header() {
             padding: '0 1rem',
             height: '100%'
           }}>
-            <Link href="/products" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: '#124A91', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
+            <Link href="/products" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
               PRODUCTS <ChevronDown size={14} />
             </Link>
-            <Link href="/solutions" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: '#124A91', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
+            <Link href="/solutions" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
               SOLUTIONS <ChevronDown size={14} />
             </Link>
-            <Link href="/industries" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: '#124A91', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
+            <Link href="/industries" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
               INDUSTRIES <ChevronDown size={14} />
             </Link>
-            <Link href="/projects" style={{ cursor: 'pointer', color: '#124A91', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
+            <Link href="/projects" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
               PROJECTS
             </Link>
-            <Link href="/company" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: '#124A91', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
+            <Link href="/blog" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
+              BLOG
+            </Link>
+            <Link href="/company" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
               COMPANY <ChevronDown size={14} />
             </Link>
           </nav>
@@ -129,13 +132,13 @@ export default function Header() {
 
         {/* Right: Actions Container */}
         {isMobile ? (
-          <div style={{ padding: '0 1rem', display: 'flex', alignItems: 'center', gap: '1rem', color: '#124A91' }}>
+          <div style={{ padding: '0 1rem', display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--color-text)' }}>
             <Search size={24} />
             <Menu size={24} />
           </div>
         ) : (
           <div style={{
-            backgroundColor: '#094896',
+            background: 'var(--color-gradient-primary)',
             padding: '0 4rem 0 4rem',
             display: 'flex',
             alignItems: 'center',
@@ -144,15 +147,15 @@ export default function Header() {
             flexShrink: 0,
             height: '100%'
           }}>
-            <div style={{ cursor: 'pointer', color: '#fff', display: 'flex', alignItems: 'center' }}>
+            <div style={{ cursor: 'pointer', color: 'var(--color-bg)', display: 'flex', alignItems: 'center' }}>
               <Search size={18} />
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#fff', fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--color-bg)', fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer' }}>
               <Globe size={16} /> EN <ChevronDown size={14} />
             </div>
 
-            <button onClick={() => setIsQuoteOpen(true)} style={{ backgroundColor: '#F2C500', color: '#124A91', border: 'none', padding: '0.75rem 1.5rem', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.05em', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}>
+            <button onClick={() => setIsQuoteOpen(true)} style={{ backgroundColor: '#FFFFFF', color: '#0004ad', border: 'none', padding: '0.75rem 1.5rem', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.05em', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}>
               REQUEST A QUOTE <ArrowRight size={14} />
             </button>
           </div>
@@ -163,7 +166,7 @@ export default function Header() {
       {/* Mega Menu Dropdown */}
       <AnimatePresence>
         {activeMenu === 'products' && !isMobile && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
@@ -174,33 +177,33 @@ export default function Header() {
               top: '100%',
               left: 0,
               width: '100%',
-              backgroundColor: '#092244',
-              boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
-              borderTop: '4px solid #F2C500',
+              backgroundColor: 'var(--color-bg)',
+              boxShadow: '0 20px 40px rgba(0, 4, 173, 0.2)',
+              borderTop: '4px solid var(--color-primary)',
               display: 'flex',
               zIndex: 99,
-              color: '#fff'
+              color: 'var(--color-bg)'
             }}
           >
             {/* Left side: Navigation (Flex 2) */}
             <div style={{ flex: '2 1 0', padding: '4rem', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4rem' }}>
-              
+
               {/* Category 1 */}
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-                  <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(242, 197, 0, 0.1)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                     <Layers size={24} color="#F2C500" />
+                  <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(0, 133, 244, 0.08)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Layers size={24} color="var(--color-primary-dark)" />
                   </div>
-                  <h4 style={{ color: '#F2C500', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Drainage & Utilities</h4>
+                  <h4 style={{ color: 'var(--color-primary-dark)', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Drainage & Utilities</h4>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {['Heavy Duty Trench Forms', 'Precision Catch Basins', 'Manhole Assemblies', 'Pipe & Culvert Molds', 'Custom Utility Vaults'].map((item, idx) => (
-                    <motion.a 
-                      key={item} 
-                      href="#" 
-                      whileHover={{ x: 6, color: '#fff' }}
+                    <motion.a
+                      key={item}
+                      href="#"
+                      whileHover={{ x: 6, color: 'var(--color-primary-dark)' }}
                       transition={{ duration: 0.2 }}
-                      style={{ color: '#93C5FD', fontSize: '0.9rem', fontWeight: 600, cursor: 'pointer', textDecoration: 'none', padding: '0.6rem 0', display: 'block' }}
+                      style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', fontWeight: 600, cursor: 'pointer', textDecoration: 'none', padding: '0.6rem 0', display: 'block' }}
                     >
                       {item}
                     </motion.a>
@@ -211,19 +214,19 @@ export default function Header() {
               {/* Category 2 */}
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-                  <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(242, 197, 0, 0.1)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                     <Box size={24} color="#F2C500" />
+                  <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(0, 133, 244, 0.08)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Box size={24} color="var(--color-primary-dark)" />
                   </div>
-                  <h4 style={{ color: '#F2C500', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Structural & Civil Molds</h4>
+                  <h4 style={{ color: 'var(--color-primary-dark)', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Structural & Civil Molds</h4>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {['Bridge Girders', 'Box Culverts', 'Prestressed Forms', 'Interlocking Blocks', 'Highway Barriers'].map((item, idx) => (
-                    <motion.a 
-                      key={item} 
-                      href="#" 
-                      whileHover={{ x: 6, color: '#fff' }}
+                    <motion.a
+                      key={item}
+                      href="#"
+                      whileHover={{ x: 6, color: 'var(--color-primary-dark)' }}
                       transition={{ duration: 0.2 }}
-                      style={{ color: '#93C5FD', fontSize: '0.9rem', fontWeight: 600, cursor: 'pointer', textDecoration: 'none', padding: '0.6rem 0', display: 'block' }}
+                      style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', fontWeight: 600, cursor: 'pointer', textDecoration: 'none', padding: '0.6rem 0', display: 'block' }}
                     >
                       {item}
                     </motion.a>
@@ -234,19 +237,19 @@ export default function Header() {
               {/* Category 3 */}
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '2rem' }}>
-                  <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(242, 197, 0, 0.1)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                     <Settings size={24} color="#F2C500" />
+                  <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(0, 133, 244, 0.08)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Settings size={24} color="var(--color-primary-dark)" />
                   </div>
-                  <h4 style={{ color: '#F2C500', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Specialty Forms</h4>
+                  <h4 style={{ color: 'var(--color-primary-dark)', fontSize: '1rem', fontWeight: 900, letterSpacing: '0.05em', margin: 0, textTransform: 'uppercase' }}>Specialty Forms</h4>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                   {['Retaining Wall Systems', 'Median Barriers', 'Custom Architecture', 'Lifting Accessories', 'Form Liners & Textures'].map((item, idx) => (
-                    <motion.a 
-                      key={item} 
-                      href="#" 
-                      whileHover={{ x: 6, color: '#fff' }}
+                    <motion.a
+                      key={item}
+                      href="#"
+                      whileHover={{ x: 6, color: 'var(--color-primary-dark)' }}
                       transition={{ duration: 0.2 }}
-                      style={{ color: '#93C5FD', fontSize: '0.9rem', fontWeight: 600, cursor: 'pointer', textDecoration: 'none', padding: '0.6rem 0', display: 'block' }}
+                      style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', fontWeight: 600, cursor: 'pointer', textDecoration: 'none', padding: '0.6rem 0', display: 'block' }}
                     >
                       {item}
                     </motion.a>
@@ -255,35 +258,35 @@ export default function Header() {
               </div>
 
             </div>
-            
+
             {/* Featured Right Section (Flex 1) */}
-            <div style={{ flex: '1 1 0', backgroundColor: '#0B2A55', padding: '4rem', position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ flex: '1 1 0', backgroundColor: '#0004AD', padding: '4rem', position: 'relative', overflow: 'hidden', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               {/* Background Glow */}
-              <div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '400px', height: '400px', backgroundColor: '#124A91', borderRadius: '50%', filter: 'blur(100px)', opacity: 0.6 }} />
-              
+              <div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '400px', height: '400px', backgroundColor: 'var(--color-text)', borderRadius: '50%', filter: 'blur(100px)', opacity: 0.6 }} />
+
               <div style={{ position: 'relative', zIndex: 2 }}>
-                <div style={{ display: 'inline-block', backgroundColor: '#F2C500', color: '#092244', padding: '0.35rem 1rem', fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.1em', borderRadius: '100px', marginBottom: '1.5rem' }}>
+                <div style={{ display: 'inline-block', backgroundColor: 'var(--color-primary)', color: 'var(--color-text)', padding: '0.35rem 1rem', fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.1em', borderRadius: '100px', marginBottom: '1.5rem' }}>
                   FEATURED SOLUTION
                 </div>
-                
-                <h5 style={{ color: '#fff', fontSize: '2.2rem', fontWeight: 900, margin: '0 0 1rem 0', lineHeight: 1.1 }}>
-                  MEGA MOLD<br/>TRENCH SYSTEM
+
+                <h5 style={{ color: 'var(--color-bg)', fontSize: '2.2rem', fontWeight: 900, margin: '0 0 1rem 0', lineHeight: 1.1 }}>
+                  MEGA MOLD<br />TRENCH SYSTEM
                 </h5>
-                
-                <p style={{ color: '#93C5FD', fontSize: '0.95rem', lineHeight: 1.6, margin: '0 0 2rem 0', maxWidth: '90%' }}>
+
+                <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: 1.6, margin: '0 0 2rem 0', maxWidth: '90%' }}>
                   Engineered for maximum durability and precision in harsh infrastructure environments. Discover why industry leaders choose Mega Mold.
                 </p>
-                
-                <div style={{ position: 'relative', width: '100%', height: '240px', backgroundColor: '#fff', borderRadius: '16px', overflow: 'hidden', marginBottom: '2.5rem', boxShadow: '0 20px 40px rgba(0,0,0,0.3)' }}>
+
+                <div style={{ position: 'relative', width: '100%', height: '240px', backgroundColor: 'var(--color-bg)', borderRadius: '16px', overflow: 'hidden', marginBottom: '2.5rem', boxShadow: '0 20px 40px rgba(0, 4, 173, 0.3)' }}>
                   <Image src="/images/Mega_Mold_Trench_Red_frame1_no_logo.jpg" alt="Trench Mold" fill style={{ objectFit: 'contain', padding: '2rem' }} />
                 </div>
 
-                <motion.button 
+                <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  style={{ width: '100%', backgroundColor: 'transparent', color: '#F2C500', border: '2px solid #F2C500', padding: '1.2rem 2rem', fontSize: '0.85rem', fontWeight: 900, letterSpacing: '0.1em', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderRadius: '8px', transition: 'all 0.3s ease' }}
-                  onMouseOver={(e) => { e.currentTarget.style.backgroundColor = '#F2C500'; e.currentTarget.style.color = '#092244'; }}
-                  onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#F2C500'; }}
+                  style={{ width: '100%', backgroundColor: 'transparent', color: 'var(--color-primary)', border: '2px solid var(--color-primary)', padding: '1.2rem 2rem', fontSize: '0.85rem', fontWeight: 900, letterSpacing: '0.1em', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderRadius: '8px', transition: 'all 0.3s ease' }}
+                  onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'var(--color-primary)'; e.currentTarget.style.color = 'var(--color-text)'; }}
+                  onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = 'var(--color-primary)'; }}
                 >
                   VIEW SPECIFICATIONS <ArrowRight size={18} />
                 </motion.button>

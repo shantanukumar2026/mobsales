@@ -19,14 +19,14 @@ import InteractiveMoldExplorer from "@/components/InteractiveMoldExplorer";
 const HERO_CARDS = [
   {
     src: "/images/ring_mold_animation_202_frame1_no_logo.jpg",
-    title: "RING MOLD SYSTEM (BLUE)"
+    title: "RING MOLD SYSTEM"
   },
   {
-    src: "/images/Mega_Mold_Trench_Red_frame1_no_logo.jpg",
-    title: "TRENCH MOLD (RED)"
+    src: "/images/trnch_mold_animation_333_frame2.jpg",
+    title: "TRENCH MOLD "
   },
   {
-    src: "/images/12_10__30_48_mold_rectangle_14_frame1_no_logo.jpg",
+    src: "/images/12_10__30_48_mold_rectangle_5277_frame3.jpg",
     title: "RECTANGLE FORM"
   }
 ];
@@ -87,7 +87,7 @@ export default function Home() {
                     transformOrigin: 'bottom center',
                     borderRadius: '24px',
                     overflow: 'hidden',
-                    boxShadow: '0 30px 60px rgba(9, 72, 150, 0.25)',
+                    boxShadow: '0 30px 60px rgba(0, 4, 173, 0.25)',
                     border: '8px solid var(--color-bg)',
                     backgroundColor: 'var(--color-bg)',
                     display: 'flex',

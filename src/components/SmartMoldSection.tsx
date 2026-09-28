@@ -22,16 +22,16 @@ export default function SmartMoldSection() {
   return (
     <>
       {/* Why Contractors Choose Us Section */}
-      <section style={{ padding: '8rem 2rem', backgroundColor: '#FAFAF7', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ padding: '8rem 2rem', backgroundColor: 'var(--color-bg-warm)', position: 'relative', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', zIndex: 2, position: 'relative' }}>
           <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-            <span style={{ color: '#124A91', fontWeight: 800, letterSpacing: '0.15em', fontSize: '0.9rem', textTransform: 'uppercase' }}>
+            <span style={{ color: 'var(--color-text)', fontWeight: 800, letterSpacing: '0.15em', fontSize: '0.9rem', textTransform: 'uppercase' }}>
               Built For The Jobsite
             </span>
-            <h2 style={{ fontSize: '3.5rem', fontWeight: 900, color: '#0B203F', marginTop: '1rem', lineHeight: 1.1 }}>
+            <h2 style={{ fontSize: '3.5rem', fontWeight: 900, marginTop: '1rem', lineHeight: 1.1, background: 'linear-gradient(90deg, #0004AD 0%, #004AAD 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               WHY PRECAST CREWS<br />CHOOSE MOB SALES.
             </h2>
-            <div style={{ width: '80px', height: '4px', backgroundColor: '#F2C500', margin: '2rem auto 0' }} />
+            <div style={{ width: '80px', height: '4px', backgroundColor: 'var(--color-primary)', margin: '2rem auto 0' }} />
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem' }}>
@@ -40,23 +40,25 @@ export default function SmartMoldSection() {
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -10, boxShadow: '0 25px 50px rgba(0, 4, 173, 0.1)' }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
                 style={{ 
-                  backgroundColor: '#fff', 
+                  backgroundColor: 'var(--color-bg)', 
                   padding: '3rem 2rem', 
-                  borderRadius: '16px', 
-                  borderTop: '4px solid #F2C500',
-                  boxShadow: '0 10px 30px rgba(0,0,0,0.05)'
+                  borderRadius: '24px', 
+                  borderTop: '4px solid var(--color-primary)',
+                  boxShadow: '0 10px 30px rgba(0, 4, 173, 0.04)',
+                  transition: 'box-shadow 0.3s ease'
                 }}
               >
-                <div style={{ color: '#124A91', marginBottom: '1.5rem' }}>
+                <div style={{ color: 'var(--color-text)', marginBottom: '1.5rem' }}>
                   {feat.icon}
                 </div>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, color: '#124A91', marginBottom: '1rem' }}>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--color-text)', marginBottom: '1rem' }}>
                   {feat.title}
                 </h3>
-                <p style={{ color: '#334155', lineHeight: 1.6, fontWeight: 500 }}>
+                <p style={{ color: '#1E3BA1', lineHeight: 1.6, fontWeight: 500 }}>
                   {feat.desc}
                 </p>
               </motion.div>
@@ -66,19 +68,19 @@ export default function SmartMoldSection() {
       </section>
 
       {/* Active Intelligence Section */}
-      <section style={{ backgroundColor: '#0B203F', color: '#fff', padding: '8rem 2rem', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(242,197,0,0.1) 0%, transparent 40%)' }} />
+      <section style={{ backgroundColor: '#0004AD', color: 'var(--color-bg)', padding: '8rem 2rem', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(0, 187, 255,0.15) 0%, transparent 50%)' }} />
         
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '6rem', alignItems: 'center', position: 'relative', zIndex: 2 }}>
           
           <div style={{ flex: '1 1 500px' }}>
-            <span style={{ color: '#F2C500', fontWeight: 800, letterSpacing: '0.15em', fontSize: '1rem' }}>
+            <span style={{ color: 'var(--color-primary)', fontWeight: 800, letterSpacing: '0.15em', fontSize: '1rem' }}>
               // NEXT GENERATION
             </span>
-            <h2 style={{ fontSize: '4rem', fontWeight: 900, marginTop: '1rem', marginBottom: '2rem', lineHeight: 1.1, textTransform: 'uppercase' }}>
+            <h2 style={{ fontSize: '4rem', fontWeight: 900, marginTop: '1rem', marginBottom: '2rem', lineHeight: 1.1, textTransform: 'uppercase', background: 'linear-gradient(90deg, #ffffff 0%, #1E3BA1 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               TRANSITIONING FROM PASSIVE IRON TO ACTIVE INTELLIGENCE.
             </h2>
-            <p style={{ fontSize: '1.2rem', color: '#A0AEC0', lineHeight: 1.7, marginBottom: '3rem' }}>
+            <p style={{ fontSize: '1.2rem', color: '#1E3BA1', lineHeight: 1.7, marginBottom: '3rem' }}>
               Our next-generation heavy infrastructure molds integrate seamlessly with data networks, transforming standard forms into a real-time diagnostic grid. Predict curing times, track jobsite telemetry, and ensure absolute structural integrity.
             </p>
             
@@ -92,12 +94,12 @@ export default function SmartMoldSection() {
                   transition={{ delay: i * 0.15 }}
                   style={{ display: 'flex', gap: '1.5rem' }}
                 >
-                  <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(242,197,0,0.1)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#F2C500', flexShrink: 0 }}>
+                  <div style={{ width: '48px', height: '48px', backgroundColor: 'rgba(0, 187, 255,0.1)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)', flexShrink: 0 }}>
                     {feat.icon}
                   </div>
                   <div>
-                    <h4 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#fff' }}>{feat.title}</h4>
-                    <p style={{ color: '#8892B0', lineHeight: 1.5, margin: 0 }}>{feat.desc}</p>
+                    <h4 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: 'var(--color-bg)' }}>{feat.title}</h4>
+                    <p style={{ color: '#1E3BA1', lineHeight: 1.5, margin: 0 }}>{feat.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -105,26 +107,32 @@ export default function SmartMoldSection() {
           </div>
 
           <div style={{ flex: '1 1 500px', position: 'relative' }}>
-            <div style={{ position: 'relative', width: '100%', paddingBottom: '100%', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.5)' }}>
+            <div style={{ position: 'relative', width: '100%', paddingBottom: '100%', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0, 4, 173, 0.5)' }}>
               {/* Fallback to an existing image */}
               <Image src="/images/ring_mold_animation_202_frame1_no_logo.jpg" alt="Smart Mold" fill style={{ objectFit: 'cover' }} />
               
               {/* Overlay telemetry UI simulation */}
-              <div style={{ position: 'absolute', top: '10%', right: '-10%', width: '60%', backgroundColor: 'rgba(11,32,63,0.9)', backdropFilter: 'blur(10px)', padding: '1.5rem', borderRadius: '16px', border: '1px solid rgba(242,197,0,0.3)', color: '#fff' }}>
-                <div style={{ fontSize: '0.8rem', color: '#F2C500', fontWeight: 700, marginBottom: '1rem', letterSpacing: '0.1em' }}>LIVE TELEMETRY</div>
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                style={{ position: 'absolute', top: '10%', right: '-10%', width: '60%', backgroundColor: 'rgba(0, 4, 173,0.75)', backdropFilter: 'blur(16px)', padding: '1.5rem', borderRadius: '20px', border: '1px solid rgba(0, 187, 255,0.4)', color: 'var(--color-bg)', boxShadow: '0 20px 40px rgba(0, 4, 173, 0.3)' }}
+              >
+                <div style={{ fontSize: '0.8rem', color: 'var(--color-primary)', fontWeight: 700, marginBottom: '1rem', letterSpacing: '0.1em' }}>LIVE TELEMETRY</div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
                   <span style={{ opacity: 0.8 }}>Internal Temp:</span>
                   <span style={{ fontWeight: 800 }}>142°F</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
                   <span style={{ opacity: 0.8 }}>Structural Stress:</span>
-                  <span style={{ fontWeight: 800, color: '#4ade80' }}>Nominal</span>
+                  <span style={{ fontWeight: 800, color: '#00BBFF' }}>Nominal</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                   <span style={{ opacity: 0.8 }}>Cure Status:</span>
                   <span style={{ fontWeight: 800 }}>87%</span>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
 

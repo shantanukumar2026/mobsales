@@ -39,7 +39,7 @@ export default function WhySteelFormsSection() {
                 gap: '4vw',
                 marginLeft: idx % 2 !== 0 ? 'auto' : '0',
                 maxWidth: '900px',
-                borderTop: '1px solid rgba(255,255,255,0.1)',
+                borderTop: '1px solid rgba(240, 246, 252, 0.1)',
                 paddingTop: '3rem'
               }}
             >
@@ -48,7 +48,7 @@ export default function WhySteelFormsSection() {
               </div>
               <div>
                 <h3 className="text-h3" style={{ fontSize: '2rem', marginBottom: '1rem', color: 'var(--color-bg)' }}>{card.title}</h3>
-                <p className="text-body-large" style={{ fontSize: '1.15rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.6 }}>{card.desc}</p>
+                <p className="text-body-large" style={{ fontSize: '1.15rem', color: 'rgba(240, 246, 252, 0.7)', lineHeight: 1.6 }}>{card.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -56,8 +56,8 @@ export default function WhySteelFormsSection() {
       </div>
       
       {/* Decorative background elements */}
-      <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: '40vw', height: '40vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(212,167,0,0.15) 0%, rgba(9,72,150,0) 70%)', zIndex: 0 }} />
-      <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: '30vw', height: '30vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(244,196,0,0.1) 0%, rgba(9,72,150,0) 70%)', zIndex: 0 }} />
+      <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: '40vw', height: '40vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(0, 187, 255, 0.15) 0%, rgba(0, 4, 173, 0) 70%)', zIndex: 0 }} />
+      <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: '30vw', height: '30vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(0, 187, 255, 0.1) 0%, rgba(0, 4, 173, 0) 70%)', zIndex: 0 }} />
     </section>
   );
 }

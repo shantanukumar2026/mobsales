@@ -42,55 +42,29 @@ export default function ProductShowcase() {
   };
 
   return (
-    <section id="products" style={{ backgroundColor: '#fff', padding: '4rem 0', overflow: 'hidden' }}>
+    <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.7, ease: "easeOut" }} id="products" style={{ backgroundColor: 'var(--color-bg)', padding: '4rem 0', overflow: 'hidden' }}>
       <div className="container">
 
         {/* Header Section */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'flex-end', marginBottom: '4rem' }}>
-          <div style={{ flex: '1 1 55%', minWidth: '400px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem' }}>
-              <div style={{ width: '3px', height: '16px', backgroundColor: '#F2C500' }} />
-              <span style={{ fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', color: '#004B87', textTransform: 'uppercase' }}>
-                ENGINEERED PRODUCT SYSTEMS
-              </span>
-            </div>
-
-            <h2 style={{ margin: 0, fontSize: 'clamp(3.5rem, 6vw, 6rem)', fontWeight: 900, color: '#004B87', lineHeight: 1, letterSpacing: '-0.02em', textTransform: 'uppercase' }}>
-              FORMS BUILT<br />AROUND YOUR<br />PRODUCTION.
-            </h2>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', marginBottom: '4rem', width: '100%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <div style={{ width: '3px', height: '16px', backgroundColor: 'var(--color-primary)' }} />
+            <span style={{ fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', color: 'var(--color-primary-dark)', textTransform: 'uppercase' }}>
+              ENGINEERED PRODUCT SYSTEMS
+            </span>
           </div>
 
-          <div style={{ flex: '1 1 35%', minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '2rem', paddingBottom: '0.5rem' }}>
-            <p style={{ fontSize: '1.15rem', color: '#3973A4', fontWeight: 500, lineHeight: 1.6, margin: 0, borderLeft: '3px solid #004B87', paddingLeft: '1.5rem' }}>
-              From infrastructure components to structural precast systems, MOB SALES develops precision forms and molds for repeatable concrete production.
-            </p>
+          <h2 style={{ margin: 0, fontSize: 'clamp(3.5rem, 6vw, 6rem)', fontWeight: 900, color: 'var(--color-primary-dark)', lineHeight: 1, letterSpacing: '-0.02em', textTransform: 'uppercase', width: '100%' }}>
+            FORMS BUILT AROUND YOUR PRODUCTION.
+          </h2>
 
-            <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem' }}>
-              <button onClick={() => scroll('left')} style={{ width: '48px', height: '48px', borderRadius: '50%', border: '1px solid #D9DDE0', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#004B87' }}>
-                <ChevronLeft size={24} />
-              </button>
-              <button onClick={() => scroll('right')} style={{ width: '48px', height: '48px', borderRadius: '50%', border: '1px solid #F2C500', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#F2C500' }}>
-                <ChevronRight size={24} />
-              </button>
-            </div>
-          </div>
+          <p style={{ fontSize: '1.15rem', color: 'var(--color-text-muted)', fontWeight: 500, lineHeight: 1.6, margin: 0, borderLeft: '3px solid var(--color-primary-dark)', paddingLeft: '1.5rem', width: '100%' }}>
+            From infrastructure components to structural precast systems, MOB SALES develops precision forms and molds for repeatable concrete production.
+          </p>
         </div>
 
-        {/* Horizontal Scroll Gallery */}
-        <div
-          ref={scrollRef}
-          style={{
-            display: 'flex',
-            gap: '2rem',
-            overflowX: 'auto',
-            scrollbarWidth: 'none',
-            msOverflowStyle: 'none',
-            paddingBottom: '2rem',
-            marginRight: '-10vw', // Bleed edge
-            paddingRight: '10vw'
-          }}
-          className="hide-scrollbar"
-        >
+        {/* Responsive Grid Gallery */}
+        <div className="product-grid-strict" style={{ display: 'grid', gap: '2rem' }}>
           {PRODUCTS.map((product, idx) => (
             <motion.div
               key={idx}
@@ -98,31 +72,29 @@ export default function ProductShowcase() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              style={{ minWidth: '400px', flex: '0 0 auto', display: 'flex', flexDirection: 'column', backgroundColor: '#FFFFFF', borderRadius: '4px', overflow: 'hidden', border: '1px solid #D9DDE0' }}
+              style={{ display: 'flex', flexDirection: 'column', backgroundColor: idx % 2 === 0 ? '#F8FAFC' : '#F0F8FF', borderRadius: '4px', overflow: 'hidden', border: '1px solid #A8DCFF' }}
             >
               {/* Product Image */}
-              <div style={{ position: 'relative', width: '100%', height: '300px', backgroundColor: '#FAFAF7', borderBottom: '1px solid #D9DDE0' }}>
-                <Image src={product.img} alt={product.name} fill style={{ objectFit: 'contain', padding: '2rem' }} />
+              <div style={{ position: 'relative', width: '100%', height: '220px', backgroundColor: 'transparent', borderBottom: '1px solid #A8DCFF' }}>
+                <Image src={product.img} alt={product.name} fill style={{ objectFit: 'cover' }} />
               </div>
 
               {/* Product Info */}
               <div style={{ padding: '2rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
-                <div style={{ fontSize: '1rem', fontWeight: 900, color: '#F2C500', marginBottom: '0.5rem' }}>
+                <div style={{ fontSize: '1rem', fontWeight: 900, color: 'var(--color-primary)', marginBottom: '0.5rem' }}>
                   {product.num}
                 </div>
-                <h3 style={{ fontSize: '1.75rem', fontWeight: 900, color: '#004B87', marginBottom: '1.5rem', lineHeight: 1.1, textTransform: 'uppercase' }}>
+                <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--color-primary-dark)', marginBottom: '1rem', lineHeight: 1.2, textTransform: 'uppercase', wordWrap: 'break-word' }}>
                   {product.name}
                 </h3>
 
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem', marginTop: 'auto' }}>
-                  {product.tags.map((tag, i) => (
-                    <span key={i} style={{ padding: '0.25rem 0.75rem', backgroundColor: '#FAFAF7', border: '1px solid #004B87', borderRadius: '100px', fontSize: '0.7rem', fontWeight: 700, color: '#004B87', letterSpacing: '0.05em' }}>
-                      {tag}
-                    </span>
-                  ))}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem', marginTop: 'auto', color: 'var(--color-text-muted)', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.05em' }}>
+                  {product.tags.join('  •  ')}
                 </div>
+                
+                <div style={{ height: '1px', width: '100%', backgroundColor: '#A8DCFF', marginBottom: '1.5rem' }} />
 
-                <button style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#004B87', fontSize: '0.85rem', fontWeight: 800, backgroundColor: 'transparent', border: 'none', padding: 0, cursor: 'pointer', letterSpacing: '0.05em' }}>
+                <button style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-primary-dark)', fontSize: '0.85rem', fontWeight: 800, backgroundColor: 'transparent', border: 'none', padding: 0, cursor: 'pointer', letterSpacing: '0.05em' }}>
                   VIEW PRODUCT <ArrowRight size={16} />
                 </button>
               </div>
@@ -133,10 +105,21 @@ export default function ProductShowcase() {
       </div>
       <style dangerouslySetInnerHTML={{
         __html: `
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
+        .product-grid-strict {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        @media (max-width: 1200px) {
+          .product-grid-strict {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media (max-width: 768px) {
+          .product-grid-strict {
+            grid-template-columns: 1fr;
+          }
         }
       `}} />
-    </section>
+    </motion.section>
   );
 }
+
