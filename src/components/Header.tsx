@@ -88,8 +88,8 @@ export default function Header() {
           minWidth: isMobile ? 'auto' : '260px',
           height: '100%'
         }}>
-          <Link href="/" style={{ position: 'relative', width: isMobile ? '180px' : '240px', height: isMobile ? '60px' : '80px', cursor: 'pointer', display: 'block', marginLeft: '-1rem' }}>
-            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center', transform: 'scale(1.35)' }} />
+          <Link href="/" style={{ position: 'relative', width: isMobile ? '150px' : '200px', height: isMobile ? '50px' : '65px', cursor: 'pointer', display: 'block' }}>
+            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'left', transform: 'scale(1.15)', transformOrigin: 'left center' }} />
           </Link>
         </div>
 
@@ -128,8 +128,8 @@ export default function Header() {
         {/* Right: Precast Forms Logo and Action */}
         {isMobile ? (
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--color-text)' }}>
-            <Link href="/" style={{ position: 'relative', width: '150px', height: '60px', display: 'block' }}>
-              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.35)' }} />
+            <Link href="/" style={{ position: 'relative', width: '140px', height: '50px', display: 'block' }}>
+              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.15)', transformOrigin: 'right center' }} />
             </Link>
             <Menu size={24} />
           </div>
@@ -141,8 +141,8 @@ export default function Header() {
             flexShrink: 0,
             height: '100%'
           }}>
-            <Link href="/" style={{ position: 'relative', width: '220px', height: '80px', cursor: 'pointer', display: 'block', marginRight: '-1rem' }}>
-              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'center', transform: 'scale(1.35)' }} />
+            <Link href="/" style={{ position: 'relative', width: '180px', height: '65px', cursor: 'pointer', display: 'block' }}>
+              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.15)', transformOrigin: 'right center' }} />
             </Link>
           </div>
         )}

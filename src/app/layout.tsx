@@ -1,5 +1,6 @@
 import { Sora, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import BackToTop from "@/components/BackToTop";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${sora.variable} ${jakarta.variable}`} suppressHydrationWarning>
         {children}
+        <BackToTop />
       </body>
     </html>
   );
