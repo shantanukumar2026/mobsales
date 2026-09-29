@@ -36,9 +36,9 @@ export default function Header() {
       left: 0,
       width: '100%',
       zIndex: 100,
-      backgroundColor: 'var(--color-bg-warm)',
-      boxShadow: scrolled ? '0 4px 20px rgba(0, 4, 173, 0.05)' : 'none',
-      borderBottom: '2px solid #F0F6FC',
+      backgroundColor: 'var(--color-bg)',
+      boxShadow: scrolled ? '0 4px 20px rgba(0, 0, 0, 0.05)' : 'none',
+      borderBottom: '1px solid #F0F6FC',
       transition: 'box-shadow 0.3s ease',
       boxSizing: 'border-box'
     }}>
@@ -77,22 +77,18 @@ export default function Header() {
       </div>
 
       {/* Main Navigation Bar */}
-      <div style={{ display: 'flex', height: '80px', width: '100%', justifyContent: 'space-between', alignItems: 'center' }}>
-
+      <div className="container" style={{ display: 'flex', height: '80px', width: '100%', justifyContent: 'space-between', alignItems: 'center' }}>
         {/* Left: Precast Molds Logo Container */}
         <div style={{
-          backgroundColor: 'var(--color-bg)',
-          padding: isMobile ? '0 1rem' : '0 1rem 0 2rem',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: isMobile ? 'flex-start' : 'center',
           position: 'relative',
           zIndex: 2,
           flexShrink: 0,
           minWidth: isMobile ? 'auto' : '260px',
           height: '100%'
         }}>
-          <Link href="/" style={{ position: 'relative', width: isMobile ? '180px' : '240px', height: isMobile ? '60px' : '80px', cursor: 'pointer', display: 'block' }}>
+          <Link href="/" style={{ position: 'relative', width: isMobile ? '180px' : '240px', height: isMobile ? '60px' : '80px', cursor: 'pointer', display: 'block', marginLeft: '-1rem' }}>
             <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center', transform: 'scale(1.35)' }} />
           </Link>
         </div>
@@ -131,7 +127,7 @@ export default function Header() {
 
         {/* Right: Precast Forms Logo and Action */}
         {isMobile ? (
-          <div style={{ padding: '0 1rem', display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--color-text)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--color-text)' }}>
             <Link href="/" style={{ position: 'relative', width: '150px', height: '60px', display: 'block' }}>
               <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.35)' }} />
             </Link>
@@ -139,15 +135,13 @@ export default function Header() {
           </div>
         ) : (
           <div style={{
-            background: 'var(--color-bg)',
-            padding: '0 2rem 0 1rem',
             display: 'flex',
             alignItems: 'center',
             gap: '2rem',
             flexShrink: 0,
             height: '100%'
           }}>
-            <Link href="/" style={{ position: 'relative', width: '220px', height: '80px', cursor: 'pointer', display: 'block' }}>
+            <Link href="/" style={{ position: 'relative', width: '220px', height: '80px', cursor: 'pointer', display: 'block', marginRight: '-1rem' }}>
               <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'center', transform: 'scale(1.35)' }} />
             </Link>
           </div>

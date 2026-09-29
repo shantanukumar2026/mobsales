@@ -552,12 +552,12 @@ export default function Home() {
 
             <motion.div
               variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } } }}
-              style={{ display: 'flex', gap: '1rem', marginTop: '3rem' }}
+              style={{ display: 'flex', gap: '1rem', marginTop: '3rem', flexWrap: 'wrap' }}
             >
-              <button className="btn-primary hover-target" style={{ border: '1px solid rgba(255,255,255,0.2)' }}>
+              <button style={{ backgroundColor: 'var(--color-primary)', color: '#FFFFFF', border: '1px solid rgba(255,255,255,0.2)', padding: '1rem 2rem', fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap', borderRadius: '4px' }}>
                 EXPLORE PRODUCTS <ArrowRight size={18} />
               </button>
-              <button className="btn-secondary hover-target" style={{ borderColor: '#FFFFFF', color: '#FFFFFF', background: 'transparent' }}>
+              <button style={{ backgroundColor: 'transparent', color: '#FFFFFF', border: '1px solid #FFFFFF', padding: '1rem 2rem', fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.1em', cursor: 'pointer', whiteSpace: 'nowrap', borderRadius: '4px' }}>
                 TALK TO ENGINEERING
               </button>
             </motion.div>
