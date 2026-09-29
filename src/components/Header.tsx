@@ -101,12 +101,12 @@ export default function Header() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            gap: '2.5rem',
-            padding: '0.6rem 2.5rem',
+            gap: '3.5rem',
+            padding: '0 4rem',
             backgroundColor: '#F8FAFC',
-            borderRadius: '100px',
-            border: '1px solid rgba(0, 4, 173, 0.05)',
-            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.03)'
+            height: '100%',
+            borderLeft: '1px solid #E2E8F0',
+            borderRight: '1px solid #E2E8F0'
           }}>
             <Link href="/products" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
               PRODUCTS <ChevronDown size={16} />
@@ -116,15 +116,6 @@ export default function Header() {
             </Link>
             <Link href="/industries" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
               INDUSTRIES <ChevronDown size={16} />
-            </Link>
-            <Link href="/projects" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
-              PROJECTS
-            </Link>
-            <Link href="/blog" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
-              BLOG
-            </Link>
-            <Link href="/company" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
-              COMPANY <ChevronDown size={16} />
             </Link>
           </nav>
         )}
