@@ -165,7 +165,7 @@ button {
   letter-spacing: 0.05em;
   transition: var(--transition-fast);
   border: none;
-  box-shadow: 0 4px 15px rgba(240, 246, 252, 0.3);
+  box-shadow: 0 4px 25px rgba(0, 187, 255, 0.4);
 }
 
 .btn-primary:hover {
@@ -354,8 +354,7 @@ button {
   position: relative;
   z-index: 1;
   width: 50%;
-  padding-top: 2rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
 }
 
 .hero-bottom-bar {
