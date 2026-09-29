@@ -82,18 +82,18 @@ export default function Header() {
         {/* Left: Logo Container */}
         <div style={{
           backgroundColor: isMobile ? 'transparent' : 'var(--color-bg)',
-          padding: isMobile ? '0 1rem' : '0 4rem 0 2rem',
+          padding: isMobile ? '0 1rem' : '0 2rem 0 2rem',
           display: 'flex',
           alignItems: 'center',
           justifyContent: isMobile ? 'flex-start' : 'center',
-          clipPath: isMobile ? 'none' : 'polygon(0 0, 100% 0, 85% 100%, 0 100%)',
+          clipPath: isMobile ? 'none' : 'polygon(0 0, 100% 0, 90% 100%, 0 100%)',
           position: 'relative',
           zIndex: 2,
           flexShrink: 0,
-          minWidth: isMobile ? 'auto' : '320px',
+          minWidth: isMobile ? 'auto' : '260px',
           height: '100%'
         }}>
-          <Link href="/" style={{ position: 'relative', width: isMobile ? '200px' : '260px', height: isMobile ? '50px' : '70px', cursor: 'pointer', marginRight: isMobile ? '0' : '1rem', display: 'block' }}>
+          <Link href="/" style={{ position: 'relative', width: isMobile ? '200px' : '220px', height: isMobile ? '50px' : '60px', cursor: 'pointer', marginRight: isMobile ? '0' : '1rem', display: 'block' }}>
             <Image src="/logo.png" alt="MOB SALES Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center' }} />
           </Link>
         </div>
@@ -105,8 +105,8 @@ export default function Header() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            gap: '2.5rem',
-            padding: '0 1rem',
+            gap: '1.5rem',
+            padding: '0 0.5rem',
             height: '100%'
           }}>
             <Link href="/products" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
@@ -139,11 +139,11 @@ export default function Header() {
         ) : (
           <div style={{
             background: 'var(--color-primary-dark)',
-            padding: '0 4rem 0 4rem',
+            padding: '0 2rem 0 2.5rem',
             display: 'flex',
             alignItems: 'center',
-            gap: '2.5rem',
-            clipPath: 'polygon(2rem 0, 100% 0, 100% 100%, 0 100%)',
+            gap: '1.5rem',
+            clipPath: 'polygon(1.5rem 0, 100% 0, 100% 100%, 0 100%)',
             flexShrink: 0,
             height: '100%'
           }}>
@@ -155,7 +155,7 @@ export default function Header() {
               <Globe size={18} /> EN <ChevronDown size={16} />
             </div>
 
-            <button onClick={() => setIsQuoteOpen(true)} style={{ backgroundColor: 'var(--color-primary)', color: 'var(--color-bg)', border: 'none', padding: '0.85rem 1.75rem', fontSize: '0.85rem', fontWeight: 900, letterSpacing: '0.1em', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap', borderRadius: '4px', boxShadow: '0 4px 15px rgba(0, 133, 244, 0.4)', transition: 'all 0.3s ease' }} onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.backgroundColor = '#00BBFF'; }} onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.backgroundColor = 'var(--color-primary)'; }}>
+            <button onClick={() => setIsQuoteOpen(true)} style={{ backgroundColor: '#FFFFFF', color: 'var(--color-primary-dark)', border: 'none', padding: '0.85rem 1.75rem', fontSize: '0.85rem', fontWeight: 900, letterSpacing: '0.1em', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap', borderRadius: '4px', boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)', transition: 'all 0.3s ease' }} onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.15)'; }} onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.1)'; }}>
               REQUEST A QUOTE <ArrowRight size={16} />
             </button>
           </div>
