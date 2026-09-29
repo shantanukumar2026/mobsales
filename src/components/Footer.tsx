@@ -17,10 +17,7 @@ export default function Footer() {
           {/* Logo & Info */}
           <div style={{ flex: '1 1 250px', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <h2 style={{ margin: 0, fontSize: '2.5rem', fontWeight: 900, letterSpacing: '-0.05em', lineHeight: 1 }}>
-                <span style={{ color: 'var(--color-text)' }}>MOB</span>
-                <span style={{ color: 'var(--color-primary)' }}>SALES</span>
-              </h2>
+              <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" width={180} height={60} unoptimized />
             </div>
             <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', lineHeight: 1.6, margin: 0, fontWeight: 500 }}>
               <strong style={{ color: 'var(--color-text)' }}>Engineering precision. Building possibilities.</strong><br />
@@ -165,7 +162,7 @@ export default function Footer() {
               <span style={{ color: 'var(--color-primary)' }}>Across Continents</span>
             </h3>
             <p style={{ color: '#F8FAFC', fontSize: '0.95rem', lineHeight: 1.6, maxWidth: '400px' }}>
-              From local projects to global infrastructure, MobSales is a trusted partner for precast manufacturers worldwide.
+              From local projects to global infrastructure, we are a trusted partner for precast manufacturers worldwide.
             </p>
           </div>
 
@@ -216,7 +213,7 @@ export default function Footer() {
                   <Phone size={18} color="#FFFFFF" /> +1 (631) 327-2544 &nbsp;|&nbsp; 631-827-7408
                 </li>
                 <li style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: '#F8FAFC', fontSize: '0.9rem' }}>
-                  <Mail size={18} color="#FFFFFF" /> noreply@mobsales.test
+                  <Mail size={18} color="#FFFFFF" /> info@precastmolds.test
                 </li>
               </ul>
             </div>
@@ -246,7 +243,7 @@ export default function Footer() {
 
         {/* Simple Text Logo */}
         <div style={{ display: 'flex', alignItems: 'center', position: 'relative', width: '150px', height: '48px', backgroundColor: '#FFFFFF', borderRadius: '4px', padding: '0.25rem' }}>
-          <Image src="/logo.png" alt="MOB SALES Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'center', padding: '0.25rem' }} />
+          <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'center', padding: '0.25rem' }} />
         </div>
 
         {/* Legal Links */}

@@ -99,7 +99,7 @@ export default function BlogPostPage() {
                   <div className="avatar">A</div>
                   <div className="author-details">
                     <span className="author-name">Admin Team</span>
-                    <span className="author-role">MobSales Editor</span>
+                    <span className="author-role">Editor</span>
                   </div>
                 </div>
                 <div className="reading-time">

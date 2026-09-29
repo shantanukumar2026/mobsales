@@ -12,7 +12,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "MOB SALES | Precast Concrete Forms & Molds",
+  title: "Precast Molds & Precast Forms",
   description: "Precision-engineered precast concrete forms and molds for demanding production. Custom precast concrete mold manufacturer delivering world-class steel precast molds.",
   keywords: "precast concrete molds, precast concrete forms, precast concrete mold manufacturer, precast concrete form manufacturer, concrete molds, steel precast molds, custom precast molds",
 };

@@ -74,7 +74,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <svg viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '16px', height: '16px' }}>
             <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#FFFFFF" />
           </svg>
-          MobSales Admin
+          Admin Panel
         </div>
         
         <nav style={{ flex: 1, padding: '1rem 0.5rem', display: 'flex', flexDirection: 'column', gap: '0.125rem' }}>
