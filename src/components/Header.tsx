@@ -92,8 +92,8 @@ export default function Header() {
           minWidth: isMobile ? 'auto' : '220px',
           height: '100%'
         }}>
-          <Link href="/" style={{ position: 'relative', width: isMobile ? '160px' : '180px', height: isMobile ? '50px' : '60px', cursor: 'pointer', display: 'block' }}>
-            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center' }} />
+          <Link href="/" style={{ textDecoration: 'none', color: '#0004AD', fontSize: isMobile ? '1.2rem' : '1.5rem', fontWeight: 900, letterSpacing: '-0.02em', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', height: '100%' }}>
+            PRECAST MOLDS
           </Link>
         </div>
 
@@ -132,8 +132,8 @@ export default function Header() {
         {/* Right: Precast Forms Logo and Action */}
         {isMobile ? (
           <div style={{ padding: '0 1rem', display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--color-text)' }}>
-            <Link href="/" style={{ position: 'relative', width: '120px', height: '40px', display: 'block' }}>
-              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right' }} />
+            <Link href="/" style={{ textDecoration: 'none', color: '#0004AD', fontSize: '1.2rem', fontWeight: 900, letterSpacing: '-0.02em', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', height: '100%' }}>
+              PRECAST FORMS
             </Link>
             <Menu size={24} />
           </div>
@@ -147,13 +147,9 @@ export default function Header() {
             flexShrink: 0,
             height: '100%'
           }}>
-            <Link href="/" style={{ position: 'relative', width: '180px', height: '60px', cursor: 'pointer', display: 'block' }}>
-              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'center' }} />
+            <Link href="/" style={{ textDecoration: 'none', color: '#0004AD', fontSize: '1.5rem', fontWeight: 900, letterSpacing: '-0.02em', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', height: '100%' }}>
+              PRECAST FORMS
             </Link>
-
-            <button onClick={() => setIsQuoteOpen(true)} style={{ backgroundColor: '#0004AD', color: '#FFFFFF', border: 'none', padding: '0.75rem 1.5rem', fontSize: '0.85rem', fontWeight: 900, letterSpacing: '0.1em', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap', borderRadius: '4px', boxShadow: '0 4px 15px rgba(0, 4, 173, 0.2)', transition: 'all 0.3s ease' }} onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 4, 173, 0.3)'; }} onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 4, 173, 0.2)'; }}>
-              REQUEST A QUOTE <ArrowRight size={16} />
-            </button>
           </div>
         )}
 
