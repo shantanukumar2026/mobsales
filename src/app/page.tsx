@@ -297,8 +297,8 @@ const Section10Resources = () => {
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', marginBottom: '2rem' }}>
           {resources.map((res, i) => (
             <div key={i} style={{ padding: '1rem 2rem', border: 'none', backgroundColor: 'var(--color-bg)', color: COLOR_TITLE, fontWeight: 900, letterSpacing: '0.05em', display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer', transition: 'all 0.3s ease', borderRadius: '4px' }}
-              onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'var(--color-primary)'; }}
-              onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'var(--color-bg)'; }}
+              onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'var(--color-primary)'; e.currentTarget.style.color = '#FFFFFF'; }}
+              onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'var(--color-bg)'; e.currentTarget.style.color = COLOR_TITLE; }}
             >
               <FileText size={18} /> {res}
             </div>

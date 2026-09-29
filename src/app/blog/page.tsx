@@ -12,7 +12,7 @@ export default function BlogPage() {
 
   useEffect(() => {
     async function fetchBlogs() {
-      const { data, error } = await supabase.from('blogs').select('*, categories(name)').order('created_at', { ascending: false });
+      const { data, error } = await supabase.from('blogs').select('*, categories(name)').eq('status', 'Published').order('created_at', { ascending: false });
       if (!error && data) setBlogs(data);
       setLoading(false);
     }
