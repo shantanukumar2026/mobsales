@@ -86,8 +86,10 @@ export default function Header() {
           position: 'relative',
           zIndex: 2,
           flexShrink: 0,
-          minWidth: isMobile ? 'auto' : '220px',
-          height: '100%'
+          minWidth: isMobile ? 'auto' : '240px',
+          height: '100%',
+          borderRight: !isMobile ? '1px solid #E2E8F0' : 'none',
+          paddingRight: !isMobile ? '2rem' : '0'
         }}>
           <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: isMobile ? '160px' : '220px', height: isMobile ? '50px' : '70px', cursor: 'pointer', display: 'block' }}>
             <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center', transform: 'scale(1.25)', transformOrigin: 'center left' }} />
@@ -140,7 +142,9 @@ export default function Header() {
             alignItems: 'center',
             gap: '2rem',
             flexShrink: 0,
-            height: '100%'
+            height: '100%',
+            borderLeft: '1px solid #E2E8F0',
+            paddingLeft: '2rem'
           }}>
             <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: '180px', height: '70px', cursor: 'pointer', display: 'block' }}>
               <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.25)', transformOrigin: 'center right' }} />
