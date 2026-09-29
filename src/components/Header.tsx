@@ -144,8 +144,8 @@ export default function Header() {
             justifyContent: 'flex-end',
             minWidth: '220px'
           }}>
-            <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: '180px', height: '70px', cursor: 'pointer', display: 'block', marginLeft: '-40px' }}>
-              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.25)', transformOrigin: 'center right' }} />
+            <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: '180px', height: '70px', cursor: 'pointer', display: 'block' }}>
+              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.25)', transformOrigin: 'center right', left: '-40px' }} />
             </Link>
           </div>
         )}
