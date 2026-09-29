@@ -39,25 +39,25 @@ const Section04Capabilities = () => {
     {
       img: "/kfmolds/LegoBlock-600x600x2400-3.jpg",
       name: "BLOCK MOLD",
-      desc: "Heavy-duty steel forming system designed for the efficient production of precast blocks. Engineered with precision tolerances and rapid demolding capabilities to maximize throughput while maintaining absolute structural integrity for high-volume manufacturing.",
+      desc: "A strong steel mold used to make large concrete blocks. These blocks are commonly used for building retaining walls. The mold is built to last and makes it easy to remove finished blocks quickly, so you can produce more in less time.",
       app: "RETAINING WALLS"
     },
     {
       img: "/kfmolds/Manhole-Riser-1500-2100-scaled.jpg",
       name: "RING MOLD SYSTEM",
-      desc: "Precision circular steel mold engineered specifically for high-volume manhole and drainage component manufacturing. Features adjustable sizing mechanisms and robust reinforcements to withstand the rigorous demands of continuous industrial precast operations.",
+      desc: "A round steel mold used to make concrete rings for manholes, storm drains, and sewer systems. You can adjust the size to make different diameter rings. It's built tough for everyday use in busy concrete plants.",
       app: "DRAINAGE"
     },
     {
       img: "/kfmolds/Manhole-Concrete-Assembly-scaled.jpg",
       name: "MANHOLE ASSEMBLY",
-      desc: "Comprehensive modular forming solution designed for producing standardized manhole risers, bases, and cones. Built to exact regional utility specifications ensuring perfect joint alignment, durability, and seamless integration into modern infrastructure projects.",
+      desc: "A complete set of molds for making all the parts of a manhole — the base, the riser rings, and the cone top. Each piece fits together perfectly when installed underground. Built to meet local utility standards.",
       app: "INFRASTRUCTURE"
     },
     {
       img: "/kfmolds/Expandable-Box-Culvert-12x12x8-4-3.jpg",
       name: "RECTANGLE CATCH BASIN",
-      desc: "Highly adjustable rectangular forms constructed for customized structural dimensions in stormwater management. The reinforced steel design prevents deflection during pouring, resulting in perfectly square catch basins tailored to complex utility layouts.",
+      desc: "A rectangular steel mold used to make concrete catch basins for collecting rainwater and runoff. The size can be adjusted to fit different project needs. The strong steel frame keeps its shape during concrete pouring for a perfect result every time.",
       app: "UTILITIES"
     }
   ];
@@ -72,15 +72,15 @@ const Section04Capabilities = () => {
       <div style={{ display: 'flex', flexWrap: 'wrap', width: '100%' }}>
         <div style={{ flex: '1 1 50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '4rem 4rem' }}>
           <h2 className="text-huge" style={{ color: COLOR_TITLE, marginBottom: '1.5rem', lineHeight: 1.1, wordWrap: 'break-word' }}>
-            BUILT AROUND<br />THE WAY YOU<br />PRODUCE.
+            MADE FOR<br />HOW YOU<br />WORK.
           </h2>
           <p className="text-body-large" style={{ color: COLOR_DESC, fontWeight: 500, maxWidth: '600px', marginBottom: '2rem' }}>
-            We design and manufacture heavy-duty steel forms around your precise production requirements.
-            From structural geometry and exact dimensions to rapid demolding and safe handling,
-            every mold is engineered to optimize your precast manufacturing cycle.
+            We build steel molds and forms that fit the way your concrete plant operates.
+            Whether you need a specific shape, exact size, or faster production,
+            every mold is made to help you get more done.
           </p>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            {["GEOMETRY", "DIMENSIONS", "DEMOLDING", "HANDLING", "CUSTOM CONFIGURATION"].map((tag, i) => (
+            {["CUSTOM SHAPES", "EXACT SIZES", "EASY REMOVAL", "SAFE HANDLING", "BUILT TO ORDER"].map((tag, i) => (
               <span key={i} style={{
                 padding: '0.75rem 1.5rem',
                 border: `1px solid ${COLOR_TITLE}`,
@@ -153,12 +153,12 @@ const Section04Capabilities = () => {
 // SECTION 05 - APPLICATIONS
 const Section05Applications = () => {
   const apps = [
-    { name: "INFRASTRUCTURE", desc: "Heavy civil applications including bridges, retaining walls, and highway barriers." },
-    { name: "DRAINAGE", desc: "Catch basins, manholes, inlets, and large-scale stormwater systems." },
-    { name: "UTILITIES", desc: "Underground vaults, electrical enclosures, and communication handholes." },
-    { name: "RETAINING WALLS", desc: "Heavy-duty retaining wall blocks, mechanically stabilized earth (MSE) systems, and abutments." },
-    { name: "INDUSTRIAL PRECAST", desc: "Specialized industrial components, foundations, and heavy-duty slabs." },
-    { name: "CUSTOM APPLICATIONS", desc: "Bespoke forming solutions for unique and demanding project requirements." }
+    { name: "INFRASTRUCTURE", desc: "Molds for bridges, highway barriers, retaining walls, and other large construction projects." },
+    { name: "DRAINAGE", desc: "Molds for catch basins, manholes, storm drains, and water management systems." },
+    { name: "UTILITIES", desc: "Molds for underground vaults, electrical boxes, and communication handholes." },
+    { name: "RETAINING WALLS", desc: "Molds for large interlocking blocks and wall systems that hold back earth and soil." },
+    { name: "INDUSTRIAL PRECAST", desc: "Molds for specialized concrete parts like foundations, slabs, and custom industrial components." },
+    { name: "CUSTOM PROJECTS", desc: "Can't find what you need? We design and build custom molds for any unique project." }
   ];
   return (
     <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.7, ease: "easeOut" }} style={{ padding: '6rem 4rem', backgroundColor: 'var(--color-bg)', borderTop: '1px solid #A8DCFF', width: '100%' }}>
@@ -167,7 +167,7 @@ const Section05Applications = () => {
           <div>
             <div style={{ color: 'var(--color-primary)', fontWeight: 800, letterSpacing: '0.15em', fontSize: '0.85rem', marginBottom: '1rem' }}>APPLICATIONS</div>
             <h2 style={{ fontSize: '3.5rem', fontWeight: 900, lineHeight: 1.1, color: COLOR_TITLE, textTransform: 'uppercase', width: '100%', margin: 0 }}>
-              FOR THE PRODUCTS YOU NEED TO PRODUCE.
+              MOLDS FOR EVERY JOB.
             </h2>
           </div>
         </div>
@@ -205,13 +205,13 @@ const Section05Applications = () => {
 
 // SECTION 07 - CUSTOM ENGINEERING
 const Section07Engineering = () => {
-  const steps = ["REQUIREMENT", "ENGINEERING", "DESIGN REVIEW", "FABRICATION", "DELIVERY"];
+  const steps = ["TELL US YOUR NEEDS", "WE DESIGN IT", "YOU REVIEW IT", "WE BUILD IT", "WE DELIVER IT"];
   return (
     <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.7, ease: "easeOut" }} style={{ padding: '6rem 4rem', background: 'var(--color-gradient-dark)', color: '#FFFFFF', width: '100%' }}>
       <div style={{ width: '100%', textAlign: 'center' }}>
         <div style={{ color: '#FFFFFF', fontWeight: 800, letterSpacing: '0.15em', fontSize: '0.85rem', marginBottom: '1rem' }}>CUSTOM ENGINEERING</div>
         <h2 style={{ color: '#FFFFFF', fontSize: '3.5rem', fontWeight: 900, lineHeight: 1.1, textTransform: 'uppercase', marginBottom: '3rem', width: '100%' }}>
-          YOUR PRODUCT. YOUR REQUIREMENTS. YOUR FORM.
+          TELL US WHAT YOU NEED. WE'LL BUILD IT.
         </h2>
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '3rem' }}>
@@ -226,7 +226,7 @@ const Section07Engineering = () => {
         </div>
 
         <button style={{ padding: '1.25rem 2.5rem', backgroundColor: 'var(--color-primary)', color: 'var(--color-bg)', fontWeight: 900, fontSize: '1rem', letterSpacing: '0.1em', border: 'none', cursor: 'pointer' }}>
-          DISCUSS A CUSTOM FORM
+          GET A CUSTOM QUOTE
         </button>
       </div>
     </motion.section>
@@ -241,10 +241,10 @@ const Section08Manufacturing = () => {
       <div style={{ flex: '1 1 40%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '6rem 4rem' }}>
         <div style={{ color: 'var(--color-primary)', fontWeight: 800, letterSpacing: '0.15em', fontSize: '0.85rem', marginBottom: '1rem' }}>MANUFACTURING</div>
         <h2 style={{ fontSize: '3.5rem', fontWeight: 900, lineHeight: 1.1, color: COLOR_TITLE, textTransform: 'uppercase', marginBottom: '1rem' }}>
-          FROM STEEL TO PRODUCTION.
+          HOW WE MAKE YOUR MOLDS.
         </h2>
         <p style={{ fontSize: '1.1rem', color: COLOR_DESC, fontWeight: 500, lineHeight: 1.6, maxWidth: '500px' }}>
-          Every form is manufactured in-house using heavy-duty steel and precision fabrication techniques, ensuring it withstands the rigors of high-volume precast production.
+          Every mold is made right here in our factory using heavy-duty steel. We cut, shape, weld, and finish each piece by hand to make sure it's strong enough for daily use in your concrete plant.
         </p>
       </div>
       <div style={{ flex: '1 1 60%', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
@@ -260,7 +260,7 @@ const Section08Manufacturing = () => {
 
 // SECTION 09 - QUALITY (EDGE-TO-EDGE)
 const Section09Quality = () => {
-  const checks = ["DIMENSIONAL CHECK", "ALIGNMENT", "FABRICATION INSPECTION", "MECHANICAL CHECK", "FINAL REVIEW"];
+  const checks = ["SIZE & MEASUREMENT CHECK", "PARTS LINE UP CORRECTLY", "BUILD QUALITY INSPECTION", "STRENGTH & DURABILITY TEST", "FINAL SIGN-OFF"];
   return (
     <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.7, ease: "easeOut" }} style={{ display: 'flex', flexWrap: 'wrap', backgroundColor: 'var(--color-bg)', width: '100%', borderTop: '1px solid #A8DCFF', borderBottom: '1px solid #A8DCFF' }}>
       <div style={{ flex: '1 1 50%', position: 'relative', minHeight: '500px', borderRight: '1px solid #A8DCFF' }}>
@@ -269,7 +269,7 @@ const Section09Quality = () => {
       <div style={{ flex: '1 1 50%', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '6rem 4rem' }}>
         <div style={{ color: 'var(--color-primary)', fontWeight: 800, letterSpacing: '0.15em', fontSize: '0.85rem', marginBottom: '1rem' }}>QUALITY CONTROL</div>
         <h2 style={{ fontSize: '3.5rem', fontWeight: 900, lineHeight: 1.1, color: COLOR_TITLE, textTransform: 'uppercase', marginBottom: '1rem' }}>
-          BUILT TO SPECIFICATION.
+          BUILT RIGHT, EVERY TIME.
         </h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '500px' }}>
           {checks.map((check, i) => (
@@ -286,13 +286,13 @@ const Section09Quality = () => {
 
 // SECTION 10 - TECHNICAL RESOURCES
 const Section10Resources = () => {
-  const resources = ["PRODUCT CATALOGS", "TECHNICAL DRAWINGS", "SPECIFICATIONS", "PRODUCT DOCUMENTATION", "APPLICATION INFORMATION", "DOWNLOADS"];
+  const resources = ["PRODUCT CATALOGS", "DRAWINGS & PLANS", "PRODUCT SPECS", "GUIDES & MANUALS", "HOW-TO INFO", "DOWNLOADS"];
   return (
     <motion.section initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.7, ease: "easeOut" }} style={{ padding: '6rem 4rem', background: 'var(--color-gradient-dark)', width: '100%' }}>
       <div style={{ width: '100%', textAlign: 'center' }}>
         <div style={{ color: 'var(--color-accent)', fontWeight: 800, letterSpacing: '0.15em', fontSize: '0.85rem', marginBottom: '1rem' }}>TECHNICAL RESOURCES</div>
         <h2 style={{ fontSize: '3.5rem', fontWeight: 900, lineHeight: 1.1, color: 'var(--color-bg)', textTransform: 'uppercase', marginBottom: '3rem' }}>
-          TECHNICAL DOCUMENTATION.
+          DOWNLOADS & DOCUMENTS.
         </h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem', marginBottom: '2rem' }}>
           {resources.map((res, i) => (
@@ -305,7 +305,7 @@ const Section10Resources = () => {
           ))}
         </div>
         <p style={{ color: '#FFFFFF', opacity: 0.8, fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase', margin: 0 }}>
-          TECHNICAL INFORMATION AVAILABLE ON REQUEST
+          NEED SOMETHING SPECIFIC? JUST ASK US.
         </p>
       </div>
     </motion.section>
@@ -366,14 +366,14 @@ const Section11Library = () => {
               </span>
             </div>
             <h2 style={{ fontSize: 'clamp(3rem, 5vw, 4.5rem)', fontWeight: 900, lineHeight: 1.1, color: COLOR_TITLE, textTransform: 'uppercase', width: '100%', margin: 0, letterSpacing: '-0.02em' }}>
-              SEE THE FORMS<br />IN CONTEXT.
+              OUR MOLDS<br />IN ACTION.
             </h2>
           </div>
           <button style={{ padding: '1rem 2rem', backgroundColor: 'transparent', border: `2px solid ${COLOR_TITLE}`, color: COLOR_TITLE, fontWeight: 800, letterSpacing: '0.1em', cursor: 'pointer', transition: 'all 0.3s ease', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
             onMouseOver={(e) => { e.currentTarget.style.backgroundColor = COLOR_TITLE; e.currentTarget.style.color = 'var(--color-bg)'; }}
             onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = COLOR_TITLE; }}
           >
-            EXPLORE FULL LIBRARY <ArrowRight size={18} />
+            VIEW ALL PRODUCTS <ArrowRight size={18} />
           </button>
         </div>
 
@@ -531,7 +531,7 @@ export default function Home() {
               className="text-label hover-target"
               style={{ marginBottom: '1.5rem', marginTop: '4rem', color: '#FFFFFF', borderLeft: '3px solid #FFFFFF', paddingLeft: '1rem', letterSpacing: '0.15em' }}
             >
-              PRECISION ENGINEERED PRECAST SYSTEMS
+              PRECAST CONCRETE MOLDS & FORMS
             </motion.div>
 
             <motion.h1
@@ -539,7 +539,7 @@ export default function Home() {
               className="text-huge hover-target"
               style={{ color: '#FFFFFF' }}
             >
-              FORMS THAT<br />SHAPE CONCRETE.
+              MOLDS THAT<br />BUILD AMERICA.
             </motion.h1>
 
             <motion.p
@@ -547,7 +547,7 @@ export default function Home() {
               className="text-body-large hover-target"
               style={{ maxWidth: '500px', marginTop: '1.5rem', color: '#FFFFFF', fontSize: '1.125rem', opacity: 0.9 }}
             >
-              Precast Molds and Forms engineers and manufactures precision forms and molds for demanding precast concrete production — from standard systems to fully customized solutions.
+              We make the steel molds and forms that concrete plants use every day. Whether you need standard sizes or something custom-built for your project, we've got you covered.
             </motion.p>
 
             <motion.div
@@ -555,10 +555,10 @@ export default function Home() {
               style={{ display: 'flex', gap: '1.5rem', marginTop: '2rem', flexWrap: 'wrap', position: 'relative', zIndex: 10 }}
             >
               <button className="btn-primary hover-target" style={{ border: '1px solid rgba(255,255,255,0.2)' }}>
-                EXPLORE PRODUCTS <ArrowRight size={18} />
+                SEE OUR PRODUCTS <ArrowRight size={18} />
               </button>
               <button className="btn-secondary hover-target" style={{ borderColor: '#FFFFFF', color: '#FFFFFF', background: 'transparent' }}>
-                TALK TO ENGINEERING
+                CONTACT US
               </button>
             </motion.div>
           </motion.div>
