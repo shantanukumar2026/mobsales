@@ -170,7 +170,7 @@ export default function BlogPostPage() {
                 <div className="sidebar-widget">
                   <h3 className="widget-title">Explore Topics</h3>
                   <div className="tags-container">
-                    {['Enterprise', 'B2B Sales', 'Mobile CRM', 'Productivity', 'Growth'].map(tag => (
+                    {['Precast Molds', 'Concrete Forms', 'Manufacturing', 'Engineering', 'Infrastructure'].map(tag => (
                       <span key={tag} className="tag-pill">{tag}</span>
                     ))}
                   </div>

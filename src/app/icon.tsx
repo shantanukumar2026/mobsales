@@ -9,7 +9,7 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 22,
+          fontSize: 16,
           background: '#004AAD',
           width: '100%',
           height: '100%',
@@ -19,9 +19,10 @@ export default function Icon() {
           color: 'white',
           fontWeight: 900,
           borderRadius: '4px',
+          letterSpacing: '-0.05em',
         }}
       >
-        M
+        PM
       </div>
     ),
     { ...size }
