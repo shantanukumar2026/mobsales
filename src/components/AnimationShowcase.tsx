@@ -14,9 +14,9 @@ export default function AnimationShowcase() {
   return (
     <section id="custom-engineering" style={{ padding: '8rem 0', backgroundColor: '#F0F6FC' }}>
       <div className="container">
-        
+
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: '4rem', alignItems: 'center' }}>
-          
+
           {/* Left Content */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1.5rem' }}>
@@ -25,15 +25,15 @@ export default function AnimationShowcase() {
                 CUSTOM ENGINEERING
               </span>
             </div>
-            
+
             <h2 style={{ fontSize: '3.5rem', fontWeight: 900, color: 'var(--color-text)', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: '2rem' }}>
-              YOUR PRODUCT.<br/>YOUR DIMENSIONS.<br/>YOUR FORM.
+              YOUR PRODUCT.<br />YOUR DIMENSIONS.<br />YOUR FORM.
             </h2>
-            
+
             <p style={{ fontSize: '1.1rem', color: '#1E3BA1', lineHeight: 1.6, marginBottom: '3rem' }}>
-              Every precast product has different requirements. MOB SALES develops custom forms around your product geometry, production method, dimensions and manufacturing workflow.
+              Every precast product has different requirements. Precast Molds and Forms develops custom forms around your product geometry, production method, dimensions and manufacturing workflow.
             </p>
-            
+
             <div style={{ display: 'flex', gap: '1rem', flexDirection: 'column' }}>
               <button style={{ backgroundColor: 'var(--color-text)', color: 'var(--color-bg)', border: 'none', padding: '1rem 1.5rem', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.05em', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: '280px' }}>
                 START A CUSTOM PROJECT <ArrowRight size={14} />
@@ -48,8 +48,8 @@ export default function AnimationShowcase() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             {steps.map((step, idx) => (
               <div key={idx} style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-                
-                <motion.div 
+
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -64,13 +64,13 @@ export default function AnimationShowcase() {
                     <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--color-text)', letterSpacing: '0.05em' }}>{step.name}</div>
                   </div>
                 </motion.div>
-                
+
                 {idx < steps.length - 1 && (
                   <div style={{ padding: '0 1rem', color: 'var(--color-primary)', transform: 'translateY(-2rem)' }}>
                     <ArrowRight size={24} />
                   </div>
                 )}
-                
+
               </div>
             ))}
           </div>

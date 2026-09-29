@@ -22,15 +22,15 @@ export default function BlogPage() {
   return (
     <main style={{ width: '100%', overflowX: 'hidden', backgroundColor: 'var(--color-bg)', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <Header />
-      
+
       <div style={{ flex: 1, padding: '12rem 5% 10rem', width: '100%', maxWidth: '1400px', margin: '0 auto' }}>
-        
+
         {/* Minimalist Page Header */}
         <div style={{ marginBottom: '8rem', maxWidth: '800px' }}>
           <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', color: '#1E3BA1', textDecoration: 'none', fontWeight: 400, fontSize: '0.875rem', marginBottom: '3rem', transition: 'color 0.3s ease', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
             <ArrowLeft size={16} strokeWidth={1.5} /> Back to Home
           </Link>
-          
+
           <h1 style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 300, color: '#0004AD', margin: '0 0 1.5rem 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
             Industry Insights.
           </h1>
@@ -53,21 +53,21 @@ export default function BlogPage() {
           <div style={{ display: 'grid', gap: '5rem 3rem', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
             {blogs.map((blog) => (
               <Link key={blog.id} href={`/blog/${blog.id}`} style={{ textDecoration: 'none', display: 'flex', flexDirection: 'column' }} className="blog-card">
-                
+
                 {/* Ultra Minimalist Image Container */}
                 <div style={{ width: '100%', height: '300px', backgroundColor: '#F0F6FC', overflow: 'hidden', marginBottom: '2rem', position: 'relative' }}>
                   {blog.image_url ? (
                     <img src={blog.image_url} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)' }} className="card-img" />
                   ) : (
                     <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary-dark)', fontWeight: 400, letterSpacing: '0.1em', opacity: 0.3 }}>
-                      MOB SALES
+                      Precast Molds and Forms
                     </div>
                   )}
                 </div>
 
                 {/* Clean Content */}
                 <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-                  
+
                   {/* Meta (Category + Date) */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem', fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
                     <span style={{ color: 'var(--color-primary-dark)' }}>

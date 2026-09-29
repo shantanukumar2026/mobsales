@@ -151,7 +151,7 @@ export default function Home() {
               className="text-body-large hover-target"
               style={{ maxWidth: '500px', marginTop: '1.5rem', color: 'var(--color-text)', fontSize: '1.125rem' }}
             >
-              MOB SALES engineers and manufactures precision forms and molds for demanding precast concrete production — from standard systems to fully customized solutions.
+              Precast Molds and Forms engineers and manufactures precision forms and molds for demanding precast concrete production — from standard systems to fully customized solutions.
             </motion.p>
 
             <motion.div

@@ -29,7 +29,7 @@ export default function SmartMoldSection() {
               Built For The Jobsite
             </span>
             <h2 style={{ fontSize: '3.5rem', fontWeight: 900, marginTop: '1rem', lineHeight: 1.1, background: 'linear-gradient(90deg, #0004AD 0%, #004AAD 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              WHY PRECAST CREWS<br />CHOOSE MOB SALES.
+              WHY PRECAST CREWS<br />CHOOSE Precast Molds and Forms.
             </h2>
             <div style={{ width: '80px', height: '4px', backgroundColor: 'var(--color-primary)', margin: '2rem auto 0' }} />
           </div>
@@ -43,10 +43,10 @@ export default function SmartMoldSection() {
                 whileHover={{ y: -10, boxShadow: '0 25px 50px rgba(0, 4, 173, 0.1)' }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                style={{ 
-                  backgroundColor: 'var(--color-bg)', 
-                  padding: '3rem 2rem', 
-                  borderRadius: '24px', 
+                style={{
+                  backgroundColor: 'var(--color-bg)',
+                  padding: '3rem 2rem',
+                  borderRadius: '24px',
                   borderTop: '4px solid var(--color-primary)',
                   boxShadow: '0 10px 30px rgba(0, 4, 173, 0.04)',
                   transition: 'box-shadow 0.3s ease'
@@ -70,9 +70,9 @@ export default function SmartMoldSection() {
       {/* Active Intelligence Section */}
       <section style={{ backgroundColor: '#0004AD', color: 'var(--color-bg)', padding: '8rem 2rem', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(circle at 80% 20%, rgba(0, 187, 255,0.15) 0%, transparent 50%)' }} />
-        
+
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '6rem', alignItems: 'center', position: 'relative', zIndex: 2 }}>
-          
+
           <div style={{ flex: '1 1 500px' }}>
             <span style={{ color: 'var(--color-primary)', fontWeight: 800, letterSpacing: '0.15em', fontSize: '1rem' }}>
               // NEXT GENERATION
@@ -83,10 +83,10 @@ export default function SmartMoldSection() {
             <p style={{ fontSize: '1.2rem', color: '#1E3BA1', lineHeight: 1.7, marginBottom: '3rem' }}>
               Our next-generation heavy infrastructure molds integrate seamlessly with data networks, transforming standard forms into a real-time diagnostic grid. Predict curing times, track jobsite telemetry, and ensure absolute structural integrity.
             </p>
-            
+
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               {smartFeatures.map((feat, i) => (
-                <motion.div 
+                <motion.div
                   key={i}
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -110,9 +110,9 @@ export default function SmartMoldSection() {
             <div style={{ position: 'relative', width: '100%', paddingBottom: '100%', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0, 4, 173, 0.5)' }}>
               {/* Fallback to an existing image */}
               <Image src="/images/ring_mold_animation_202_frame1_no_logo.jpg" alt="Smart Mold" fill style={{ objectFit: 'cover' }} />
-              
+
               {/* Overlay telemetry UI simulation */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

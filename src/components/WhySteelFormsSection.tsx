@@ -18,24 +18,24 @@ export default function WhySteelFormsSection() {
           viewport={{ once: true, margin: "-100px" }}
           style={{ maxWidth: '800px', marginBottom: '8vw' }}
         >
-          <div className="text-label" style={{ color: 'var(--color-primary)', marginBottom: '1.5rem' }}>THE MOB SALES ADVANTAGE</div>
+          <div className="text-label" style={{ color: 'var(--color-primary)', marginBottom: '1.5rem' }}>THE Precast Molds and Forms ADVANTAGE</div>
           <h2 className="text-h1" style={{ color: 'var(--color-bg)' }}>
-            ENGINEERED TO<br/>OUTLAST.
+            ENGINEERED TO<br />OUTLAST.
           </h2>
         </motion.div>
-        
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6vw' }}>
           {cards.map((card, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               initial={{ opacity: 0, x: idx % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              style={{ 
-                display: 'flex', 
-                flexDirection: 'row', 
-                alignItems: 'center', 
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
                 gap: '4vw',
                 marginLeft: idx % 2 !== 0 ? 'auto' : '0',
                 maxWidth: '900px',
@@ -54,7 +54,7 @@ export default function WhySteelFormsSection() {
           ))}
         </div>
       </div>
-      
+
       {/* Decorative background elements */}
       <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: '40vw', height: '40vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(0, 187, 255, 0.15) 0%, rgba(0, 4, 173, 0) 70%)', zIndex: 0 }} />
       <div style={{ position: 'absolute', bottom: '-10%', left: '-5%', width: '30vw', height: '30vw', borderRadius: '50%', background: 'radial-gradient(circle, rgba(0, 187, 255, 0.1) 0%, rgba(0, 4, 173, 0) 70%)', zIndex: 0 }} />

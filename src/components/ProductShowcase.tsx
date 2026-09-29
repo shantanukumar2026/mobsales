@@ -59,7 +59,7 @@ export default function ProductShowcase() {
           </h2>
 
           <p style={{ fontSize: '1.15rem', color: 'var(--color-text-muted)', fontWeight: 500, lineHeight: 1.6, margin: 0, borderLeft: '3px solid var(--color-primary-dark)', paddingLeft: '1.5rem', width: '100%' }}>
-            From infrastructure components to structural precast systems, MOB SALES develops precision forms and molds for repeatable concrete production.
+            From infrastructure components to structural precast systems, Precast Molds and Forms develops precision forms and molds for repeatable concrete production.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export default function ProductShowcase() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2.5rem', marginTop: 'auto', color: 'var(--color-text-muted)', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.05em' }}>
                   {product.tags.join('  •  ')}
                 </div>
-                
+
                 <div style={{ height: '1px', width: '100%', backgroundColor: '#A8DCFF', marginBottom: '1.5rem' }} />
 
                 <button style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-primary-dark)', fontSize: '0.85rem', fontWeight: 800, backgroundColor: 'transparent', border: 'none', padding: 0, cursor: 'pointer', letterSpacing: '0.05em' }}>
