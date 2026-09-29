@@ -117,6 +117,12 @@ export default function Header() {
             <Link href="/industries" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
               INDUSTRIES <ChevronDown size={16} />
             </Link>
+            <Link href="/blog" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
+              BLOG
+            </Link>
+            <Link href="/contact" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
+              CONTACT
+            </Link>
           </nav>
         )}
 
