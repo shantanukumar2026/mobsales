@@ -82,14 +82,15 @@ export default function Header() {
         <div style={{
           display: 'flex',
           alignItems: 'center',
+          justifyContent: isMobile ? 'flex-start' : 'center',
           position: 'relative',
           zIndex: 2,
           flexShrink: 0,
-          minWidth: isMobile ? 'auto' : '260px',
+          minWidth: isMobile ? 'auto' : '220px',
           height: '100%'
         }}>
-          <Link href="/" style={{ position: 'relative', width: isMobile ? '150px' : '200px', height: isMobile ? '50px' : '65px', cursor: 'pointer', display: 'block' }}>
-            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'left', transform: 'scale(1.15)', transformOrigin: 'left center' }} />
+          <Link href="/" style={{ position: 'relative', width: isMobile ? '160px' : '180px', height: isMobile ? '50px' : '60px', cursor: 'pointer', display: 'block' }}>
+            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center', transform: 'scale(1.15)', transformOrigin: 'center left' }} />
           </Link>
         </div>
 
