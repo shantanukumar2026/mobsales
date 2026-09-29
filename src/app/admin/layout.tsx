@@ -60,29 +60,24 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   }
 
   const navItems = [
-    { name: "Overview", path: "/admin", icon: <LayoutDashboard size={18} /> },
-    { name: "Posts", path: "/admin/posts", icon: <FileText size={18} /> },
-    { name: "Drafts", path: "/admin/drafts", icon: <PenTool size={18} /> },
-    { name: "Categories", path: "/admin/categories", icon: <FolderTree size={18} /> },
-    { name: "Media", path: "/admin/media", icon: <ImageIcon size={18} /> },
-    { name: "Comments", path: "/admin/comments", icon: <MessageSquare size={18} /> },
-    { name: "Users", path: "/admin/users", icon: <Users size={18} /> },
-    { name: "Settings", path: "/admin/settings", icon: <Settings size={18} /> },
+    { name: "Overview", path: "/admin", icon: <LayoutDashboard size={16} /> },
+    { name: "Posts", path: "/admin/posts", icon: <FileText size={16} /> },
+    { name: "Users", path: "/admin/users", icon: <Users size={16} /> },
   ];
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#F0F6FC', fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
+    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#F9FAFB', fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
       
-      {/* Left Sidebar */}
-      <aside style={{ width: '250px', backgroundColor: 'var(--color-bg)', borderRight: '1px solid #F0F6FC', display: 'flex', flexDirection: 'column', position: 'sticky', top: 0, height: '100vh' }}>
-        <div style={{ padding: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, fontSize: '1rem', letterSpacing: '-0.02em', color: '#0004AD', borderBottom: '1px solid #F0F6FC' }}>
-          <svg viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '20px', height: '20px' }}>
-            <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#0004AD" />
+      {/* Left Sidebar (Black Enterprise UI) */}
+      <aside style={{ width: '220px', backgroundColor: '#09090B', display: 'flex', flexDirection: 'column', position: 'sticky', top: 0, height: '100vh', borderRight: '1px solid #27272A' }}>
+        <div style={{ padding: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 600, fontSize: '0.875rem', color: '#FFFFFF', borderBottom: '1px solid #27272A' }}>
+          <svg viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '16px', height: '16px' }}>
+            <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#FFFFFF" />
           </svg>
-          MobSales CMS
+          MobSales Admin
         </div>
         
-        <nav style={{ flex: 1, padding: '1.5rem 1rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+        <nav style={{ flex: 1, padding: '1rem 0.5rem', display: 'flex', flexDirection: 'column', gap: '0.125rem' }}>
           {navItems.map((item) => {
             const isActive = pathname === item.path || (item.path !== '/admin' && pathname.startsWith(item.path));
             return (
@@ -90,12 +85,14 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 key={item.path} 
                 href={item.path} 
                 style={{ 
-                  display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.65rem 1rem', 
-                  borderRadius: '6px', textDecoration: 'none', fontSize: '0.875rem', fontWeight: 500,
-                  backgroundColor: isActive ? '#F0F6FC' : 'transparent',
-                  color: isActive ? '#0004AD' : '#1E3BA1',
-                  transition: 'all 0.2s'
+                  display: 'flex', alignItems: 'center', gap: '0.5rem', padding: '0.5rem 0.75rem', 
+                  borderRadius: '4px', textDecoration: 'none', fontSize: '0.8125rem', fontWeight: 500,
+                  backgroundColor: isActive ? '#27272A' : 'transparent',
+                  color: isActive ? '#FFFFFF' : '#A1A1AA',
+                  transition: 'all 0.15s'
                 }}
+                onMouseOver={(e) => { if (!isActive) { e.currentTarget.style.backgroundColor = '#18181B'; e.currentTarget.style.color = '#FFFFFF'; } }}
+                onMouseOut={(e) => { if (!isActive) { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#A1A1AA'; } }}
               >
                 {item.icon}
                 {item.name}
@@ -104,19 +101,18 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           })}
         </nav>
 
-        <div style={{ padding: '1.5rem 1rem', borderTop: '1px solid #F0F6FC' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-              <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'linear-gradient(135deg, #0004AD, #1E3BA1)', color: 'var(--color-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.875rem', fontWeight: 600 }}>
+        <div style={{ padding: '1rem 0.5rem', borderTop: '1px solid #27272A' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 0.5rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <div style={{ width: '24px', height: '24px', borderRadius: '4px', backgroundColor: '#FFFFFF', color: '#09090B', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', fontWeight: 700 }}>
                 {(user?.name?.[0] || user?.email?.[0] || 'A').toUpperCase()}
               </div>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ fontSize: '0.875rem', fontWeight: 600, color: '#0004AD', lineHeight: 1.2 }}>{user?.name || 'Admin'}</span>
-                <span style={{ fontSize: '0.75rem', color: '#1E3BA1' }}>{user?.role || 'Administrator'}</span>
+                <span style={{ fontSize: '0.75rem', fontWeight: 500, color: '#E4E4E7', lineHeight: 1.2 }}>{user?.name || 'Admin'}</span>
               </div>
             </div>
-            <button onClick={handleLogout} style={{ background: 'transparent', border: 'none', color: '#1E3BA1', cursor: 'pointer' }} title="Logout">
-              <LogOut size={16} />
+            <button onClick={handleLogout} style={{ background: 'transparent', border: 'none', color: '#A1A1AA', cursor: 'pointer' }} title="Logout" onMouseOver={(e) => e.currentTarget.style.color = '#FFFFFF'} onMouseOut={(e) => e.currentTarget.style.color = '#A1A1AA'}>
+              <LogOut size={14} />
             </button>
           </div>
         </div>
@@ -125,20 +121,19 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       {/* Main Content Area */}
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         {/* Top Header */}
-        <header style={{ height: '64px', backgroundColor: 'var(--color-bg)', borderBottom: '1px solid #F0F6FC', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 2rem', position: 'sticky', top: 0, zIndex: 10 }}>
-          <div style={{ fontSize: '0.875rem', fontWeight: 500, color: '#1E3BA1', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            {/* Breadcrumb */}
-            Admin / <span style={{ color: '#0004AD' }}>{pathname.split('/').pop() || 'Overview'}</span>
+        <header style={{ height: '48px', backgroundColor: '#FFFFFF', borderBottom: '1px solid #E4E4E7', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 1.5rem', position: 'sticky', top: 0, zIndex: 10 }}>
+          <div style={{ fontSize: '0.8125rem', fontWeight: 500, color: '#71717A', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            Admin / <span style={{ color: '#09090B' }}>{pathname.split('/').pop() || 'Overview'}</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <Link href="/admin/posts/new" style={{ background: '#0004AD', color: 'var(--color-bg)', padding: '0.5rem 1rem', borderRadius: '6px', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none' }}>
-              + New Post
+          {pathname.includes('/posts') && (
+            <Link href="/admin/posts/new" style={{ background: '#09090B', color: '#FFFFFF', padding: '0.375rem 0.75rem', borderRadius: '4px', fontSize: '0.75rem', fontWeight: 500, textDecoration: 'none', transition: 'background 0.2s' }}>
+              Create Post
             </Link>
-          </div>
+          )}
         </header>
 
         {/* Page Content */}
-        <main style={{ padding: '3rem 2rem', maxWidth: '1200px', width: '100%', boxSizing: 'border-box' }}>
+        <main style={{ padding: '2rem 1.5rem', maxWidth: '1200px', width: '100%', boxSizing: 'border-box' }}>
           {children}
         </main>
       </div>
