@@ -90,8 +90,8 @@ export default function Header() {
           height: '100%',
           paddingLeft: isMobile ? '1rem' : '0'
         }}>
-          <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: isMobile ? '160px' : '200px', height: isMobile ? '50px' : '75px', cursor: 'pointer', display: 'block' }}>
-            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'left', transform: 'scale(1.35)', transformOrigin: 'center left' }} />
+          <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: isMobile ? '160px' : '200px', height: isMobile ? '50px' : '70px', cursor: 'pointer', display: 'block' }}>
+            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'left', transform: 'scale(1.3)', transformOrigin: 'center left' }} />
           </Link>
         </div>
 
@@ -144,8 +144,8 @@ export default function Header() {
             justifyContent: 'flex-end',
             minWidth: '220px'
           }}>
-            <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: '180px', height: '70px', cursor: 'pointer', display: 'block' }}>
-              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.25)', transformOrigin: 'center right', left: '-40px' }} />
+            <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: '200px', height: '70px', cursor: 'pointer', display: 'block' }}>
+              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.3)', transformOrigin: 'center right', left: '-40px' }} />
             </Link>
           </div>
         )}
