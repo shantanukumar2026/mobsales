@@ -89,8 +89,8 @@ export default function Header() {
           minWidth: isMobile ? 'auto' : '220px',
           height: '100%'
         }}>
-          <Link href="/" style={{ position: 'relative', width: isMobile ? '160px' : '180px', height: isMobile ? '50px' : '60px', cursor: 'pointer', display: 'block' }}>
-            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center', transform: 'scale(1.15)', transformOrigin: 'center left' }} />
+          <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: isMobile ? '160px' : '220px', height: isMobile ? '50px' : '70px', cursor: 'pointer', display: 'block' }}>
+            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center', transform: 'scale(1.25)', transformOrigin: 'center left' }} />
           </Link>
         </div>
 
@@ -101,27 +101,27 @@ export default function Header() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            gap: '1.5rem',
+            gap: '2.5rem',
             padding: '0 0.5rem',
             height: '100%'
           }}>
-            <Link href="/products" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
-              PRODUCTS <ChevronDown size={14} />
+            <Link href="/products" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
+              PRODUCTS <ChevronDown size={16} />
             </Link>
-            <Link href="/solutions" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
-              SOLUTIONS <ChevronDown size={14} />
+            <Link href="/solutions" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
+              SOLUTIONS <ChevronDown size={16} />
             </Link>
-            <Link href="/industries" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
-              INDUSTRIES <ChevronDown size={14} />
+            <Link href="/industries" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
+              INDUSTRIES <ChevronDown size={16} />
             </Link>
-            <Link href="/projects" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
+            <Link href="/projects" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
               PROJECTS
             </Link>
-            <Link href="/blog" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
+            <Link href="/blog" style={{ cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', display: 'flex', alignItems: 'center', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
               BLOG
             </Link>
-            <Link href="/company" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.8rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none' }}>
-              COMPANY <ChevronDown size={14} />
+            <Link href="/company" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
+              COMPANY <ChevronDown size={16} />
             </Link>
           </nav>
         )}
@@ -129,8 +129,8 @@ export default function Header() {
         {/* Right: Precast Forms Logo and Action */}
         {isMobile ? (
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--color-text)' }}>
-            <Link href="/" style={{ position: 'relative', width: '140px', height: '50px', display: 'block' }}>
-              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.15)', transformOrigin: 'right center' }} />
+            <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: '140px', height: '50px', display: 'block' }}>
+              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.25)', transformOrigin: 'center right' }} />
             </Link>
             <Menu size={24} />
           </div>
@@ -142,8 +142,8 @@ export default function Header() {
             flexShrink: 0,
             height: '100%'
           }}>
-            <Link href="/" style={{ position: 'relative', width: '180px', height: '65px', cursor: 'pointer', display: 'block' }}>
-              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.15)', transformOrigin: 'right center' }} />
+            <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: '180px', height: '70px', cursor: 'pointer', display: 'block' }}>
+              <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.25)', transformOrigin: 'center right' }} />
             </Link>
           </div>
         )}
