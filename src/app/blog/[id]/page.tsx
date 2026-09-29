@@ -246,7 +246,7 @@ export default function BlogPostPage() {
           gap: 0.375rem;
         }
         .article-title {
-          font-family: var(--font-sans);
+          font-family: var(--font-body);
           font-size: clamp(2rem, 5vw, 3.5rem);
           font-weight: 300;
           line-height: 1.15;
@@ -484,7 +484,7 @@ export default function BlogPostPage() {
           margin-bottom: 1.75rem;
         }
         .prose h1, .prose h2, .prose h3, .prose h4 {
-          font-family: var(--font-sans);
+          font-family: var(--font-body);
           color: var(--color-primary-dark); /* Gray 900 */
           font-weight: 700;
           letter-spacing: -0.02em;

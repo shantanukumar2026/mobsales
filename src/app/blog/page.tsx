@@ -31,7 +31,7 @@ export default function BlogPage() {
             <ArrowLeft size={16} strokeWidth={1.5} /> Back to Home
           </Link>
           
-          <h1 style={{ fontFamily: 'var(--font-sans)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 300, color: '#0004AD', margin: '0 0 1.5rem 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+          <h1 style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 300, color: '#0004AD', margin: '0 0 1.5rem 0', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
             Industry Insights.
           </h1>
           <p style={{ fontSize: '1.25rem', color: '#1E3BA1', margin: 0, fontWeight: 300, lineHeight: 1.6, maxWidth: '600px' }}>
@@ -80,7 +80,7 @@ export default function BlogPage() {
                   </div>
 
                   {/* Elegant Title */}
-                  <h2 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.25rem', fontWeight: 400, color: '#0004AD', margin: '0 0 1.5rem 0', lineHeight: 1.5, letterSpacing: '0', transition: 'color 0.3s ease' }} className="card-title">
+                  <h2 style={{ fontFamily: 'var(--font-body)', fontSize: '1.25rem', fontWeight: 400, color: '#0004AD', margin: '0 0 1.5rem 0', lineHeight: 1.5, letterSpacing: '0', transition: 'color 0.3s ease' }} className="card-title">
                     {blog.title}
                   </h2>
 
