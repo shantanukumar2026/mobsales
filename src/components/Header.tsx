@@ -138,25 +138,25 @@ export default function Header() {
           </div>
         ) : (
           <div style={{
-            background: 'var(--color-gradient-primary)',
+            background: 'var(--color-primary-dark)',
             padding: '0 4rem 0 4rem',
             display: 'flex',
             alignItems: 'center',
-            gap: '2rem',
+            gap: '2.5rem',
             clipPath: 'polygon(2rem 0, 100% 0, 100% 100%, 0 100%)',
             flexShrink: 0,
             height: '100%'
           }}>
-            <div style={{ cursor: 'pointer', color: 'var(--color-bg)', display: 'flex', alignItems: 'center' }}>
-              <Search size={18} />
+            <div style={{ cursor: 'pointer', color: 'var(--color-bg)', display: 'flex', alignItems: 'center', transition: 'color 0.3s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-bg)'}>
+              <Search size={20} />
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: 'var(--color-bg)', fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer' }}>
-              <Globe size={16} /> EN <ChevronDown size={14} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--color-bg)', fontSize: '0.85rem', fontWeight: 800, cursor: 'pointer', transition: 'color 0.3s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-bg)'}>
+              <Globe size={18} /> EN <ChevronDown size={16} />
             </div>
 
-            <button onClick={() => setIsQuoteOpen(true)} style={{ backgroundColor: '#FFFFFF', color: '#0004ad', border: 'none', padding: '0.75rem 1.5rem', fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.05em', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}>
-              REQUEST A QUOTE <ArrowRight size={14} />
+            <button onClick={() => setIsQuoteOpen(true)} style={{ backgroundColor: 'var(--color-primary)', color: 'var(--color-bg)', border: 'none', padding: '0.85rem 1.75rem', fontSize: '0.85rem', fontWeight: 900, letterSpacing: '0.1em', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap', borderRadius: '4px', boxShadow: '0 4px 15px rgba(0, 133, 244, 0.4)', transition: 'all 0.3s ease' }} onMouseOver={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.backgroundColor = '#00BBFF'; }} onMouseOut={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.backgroundColor = 'var(--color-primary)'; }}>
+              REQUEST A QUOTE <ArrowRight size={16} />
             </button>
           </div>
         )}
