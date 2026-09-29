@@ -38,7 +38,6 @@ html {
   font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
-  scroll-behavior: smooth;
 }
 
 body {
@@ -76,16 +75,18 @@ button {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-bg-warm);
+  background: #F8FAFC;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-steel);
+  background: #CBD5E1;
+  border-radius: 6px;
+  border: 3px solid #F8FAFC;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text);
+  background: #94A3B8;
 }
 
 /* Layout Utilities */
