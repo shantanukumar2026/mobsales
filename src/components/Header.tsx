@@ -82,30 +82,31 @@ export default function Header() {
         <div style={{
           display: 'flex',
           alignItems: 'center',
-          justifyContent: isMobile ? 'flex-start' : 'center',
+          justifyContent: isMobile ? 'flex-start' : 'flex-start',
           position: 'relative',
           zIndex: 2,
           flexShrink: 0,
-          minWidth: isMobile ? 'auto' : '240px',
+          minWidth: isMobile ? 'auto' : '220px',
           height: '100%',
-          borderRight: !isMobile ? '1px solid #E2E8F0' : 'none',
-          paddingRight: !isMobile ? '2rem' : '0'
+          paddingLeft: isMobile ? '1rem' : '0'
         }}>
-          <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: isMobile ? '160px' : '220px', height: isMobile ? '50px' : '70px', cursor: 'pointer', display: 'block' }}>
-            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: isMobile ? 'left' : 'center', transform: 'scale(1.25)', transformOrigin: 'center left' }} />
+          <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: isMobile ? '160px' : '200px', height: isMobile ? '50px' : '75px', cursor: 'pointer', display: 'block' }}>
+            <Image src="/precast_molds_logo.jpg" alt="Precast Molds Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'left', transform: 'scale(1.35)', transformOrigin: 'center left' }} />
           </Link>
         </div>
 
         {/* Center: Navigation Links (Hidden on Mobile) */}
         {!isMobile && (
           <nav style={{
-            flex: 1,
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             gap: '2.5rem',
-            padding: '0 0.5rem',
-            height: '100%'
+            padding: '0.6rem 2.5rem',
+            backgroundColor: '#F8FAFC',
+            borderRadius: '100px',
+            border: '1px solid rgba(0, 4, 173, 0.05)',
+            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.03)'
           }}>
             <Link href="/products" style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', cursor: 'pointer', color: 'var(--color-text)', fontSize: '0.95rem', fontWeight: 800, letterSpacing: '0.05em', height: '100%', borderBottom: '3px solid transparent', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--color-primary)'} onMouseOut={e => e.currentTarget.style.color = 'var(--color-text)'}>
               PRODUCTS <ChevronDown size={16} />
@@ -143,8 +144,8 @@ export default function Header() {
             gap: '2rem',
             flexShrink: 0,
             height: '100%',
-            borderLeft: '1px solid #E2E8F0',
-            paddingLeft: '2rem'
+            justifyContent: 'flex-end',
+            minWidth: '220px'
           }}>
             <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ position: 'relative', width: '180px', height: '70px', cursor: 'pointer', display: 'block' }}>
               <Image src="/precast_forms_logo.jpg" alt="Precast Forms Logo" fill unoptimized={true} style={{ objectFit: 'contain', objectPosition: 'right', transform: 'scale(1.25)', transformOrigin: 'center right' }} />
